@@ -61,6 +61,14 @@ body {
 	padding: 0 20px;
 	}
 
+strong {
+    font-weight: bold;
+}
+
+em {
+font-style: oblique;
+}
+	
 a {
 	text-decoration: none;
 	color: #006;
