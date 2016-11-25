@@ -171,8 +171,25 @@ div.codehilite {
 	padding: .5em;
 	font-size: 12px;
 	font-family: Monospace;
-	line-height: 1.1em;
+	line-height: 1.2em;
+        background-color:#EEE;
 	}
+
+.post code, .page code {
+        padding: .2em;
+/*         font-size: 12px; */
+        font-family: Monospace;
+/*         line-height: 1.1em; */
+        background-color:#02F2E0;
+        }
+
+.post pre code, .page pre code {
+/*         padding: .2em; */
+/*         font-size: 12px; */
+/*         font-family: Monospace; */
+        line-height: inherit;
+        background-color:transparent;
+        }
 
 form.inline_edit {
 	clear: both;

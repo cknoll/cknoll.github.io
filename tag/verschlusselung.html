@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>blog:cknoll &middot; articles tagged "Verschlüsselung"</title>
+        <link rel="shortcut icon" href="http://cknoll.github.io/favicon.ico" />
+
+        <link rel="stylesheet" href="http://cknoll.github.io/theme/css/screen.css" type="text/css" />
+        <link rel="stylesheet" href="http://cknoll.github.io/theme/css/pygments.css" type="text/css" />
+    </head>
+    <body>
+<div id="header">
+            <ul id="nav">
+                <li class="ephemeral selected"><a href="http://cknoll.github.io/tag/verschlusselung.html">Verschlüsselung</a></li>
+                <li><a href="http://cknoll.github.io">Home</a></li>
+<li><a href="http://cknoll.github.io/pages/impressum.html">Impressum</a></li>
+<li><a href="http://cknoll.github.io/archives.html">Archives</a></li>
+            </ul>
+            <div class="header_box">
+                <h1><a href="http://cknoll.github.io">blog:cknoll</a></h1>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <h4 class="date">Nov 25,  2016</h4>
+                <div class="post">
+<h2 class="title">
+                        <a href="http://cknoll.github.io/Emails-signieren.html" rel="bookmark" title="Permanent Link to &quot;Emails signieren und verschlüsseln&quot;">Emails signieren und verschlüsseln</a>
+                    </h2>
+
+                    <hr />
+<p><strong>Zusammenfassung:</strong> </p>
+<p>Emailsignaturen: Ein Anhang "signature.asc" kann durch geschickte Anwendung kryptografischer Verfahren die Echtheit einer Email bezeugen (richtiger Absender, unveränderter Inhalt).</p>
+<hr />
+<p>Ein großer Teil unserer Kommunikation basiert auf Emails.
+Spätestens seit dem NSA-Skandal ist aber vielen Menschen bewusst, dass Emails letztlich nur Textdateien sind, die zwischen verschiedenen Computern kopiert werden.
+Dabei können folgenden Probleme auftreten:</p>
+<ol>
+<li>Die Email kann unterwegs von unbefugten Personen/Programmen gelesen werden.</li>
+<li>Die Absenderadresse kann gefälscht sein.</li>
+<li>Der Inhalt kann geändert worden sein.</li>
+</ol>
+<p>Gegen Problem (1) hilft Email-Verschlüsselung, gegen (2) und (3) das Signieren von Emails (mit fancy Krypto-Methoden).
+Am besten ist natürlich eine Kombination von beiden.
+Allerdings haben viele Menschen bisher noch keine Mail-Verschlüsselung für sich eingerichtet (Schätzung: 90% meiner Mail-Kontakte). Mit <em>eingerichtet</em> meine ich: Ein Schlüsselpaar (aus privatem und öffentlichem Schlüssel) erzeugt und den öffentlichen Schlüssel veröffentlicht. Mit diesen Menschen kann ich nicht verschlüsselt kommunizieren, weil ich dafür ihren öffentlichen Schlüssel bräuchte.</p>
+<p>Ich kann aber sehr wohl alle meine Mails signieren. Mein Mailprogramm (Mozilla Thunderbird) hängt dann eine Datei namens <strong>signature.asc</strong> an die Mail an. Damit können alle Menschen die meinen öffentlichen Schlüssel haben, verifizieren, dass die Mail von mir kommt und unterwegs nicht verändert wurde (siehe Probleme (2) und (3)). Wenn das Mailprogramm (z.B. Thunderbird mit der Erweiterung Enigmail) passend konfiguriert ist, passiert das automatisch.
+Andernfalls wird der Anhang eben als Text-Datei mit scheinbar bedeutungslosen Kombinationen aus Buchstaben und Zahlen behandelt. Diese Datei kann entweder ignoriert werden - oder sie löst Verwunderung aus, welche u.U. zum Lesen dieses Artikels führt. Auch dann war es sinnvoll.</p>
+<p>Wie so oft muss man übrigens aufpassen was gemeint ist: Als Email-Signatur wird neben der hier besprochenen "Echtheits-Signatur" oft auch ein kurzer Text bezeichnet, der automatisch an jede ausgehende Mail angehangen wird. Der kann z.B. Grußformeln, Kontaktdaten oder URLs enthalten - oder auch Hinweise zur verschlüsselten Kommunikation.
+Ich habe in meinen ausgehenden Mails explizit, diesen Artikel hier verklinkt:</p>
+<pre><code>--
+...
+Was bedeutet eigentlich der Anhang "signature.asc"?
+-&gt; http://cknoll.github.io/emailsignaturen.html
+</code></pre>
+<p>In jedem Fall bin ich der Meinung, dass das Signieren von Mails eine sanfte Möglichkeit ist, auf das Thema Emailsicherheit hinzuweisen.</p>
+<p>Hier mein öffentlicher Schlüssel: <a href="http://cknoll.github.io/files/pub-key-carsten.txt">pub-key-carsten.txt</a>.</p>
+<p>Um sicher zu sein, dass es wirklich mein Schlüssel ist (und nicht ein anderer, der in böser Absicht auf den Server geladen wurde), sollte man den Schlüssel bei Gelegenheit signieren, am besten bei einem persönlichen treffen.</p>
+<p>Mehr Infos zum Verschlüsseln und Signieren gibt es z.B. unter <a href="https://virtual-privacy.org/">https://virtual-privacy.org/</a> oder sehr gerne auf <a href="http://cknoll.github.io/pages/impressum.html">Nachfrage</a>.</p>
+
+                    <div class="clear"></div>
+                    <div class="info">
+<a href="http://cknoll.github.io/Emails-signieren.html">posted at November 25, 21:30</a>&nbsp;&middot;&nbsp;<a href="http://cknoll.github.io/category/artikel.html" rel="tag">Artikel</a>
+                        <div class="tags">
+                            <a href="http://cknoll.github.io/tag/software.html">Software</a>
+                            <a href="http://cknoll.github.io/tag/verschlusselung.html" class="selected">Verschlüsselung</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="clear"></div>
+                <div id="footer">
+                    <p>
+                    Mockingbird theme by <a href="http://nevanscott.com/">Nevan Scott</a>
+                    &middot;
+                    <a class="atom" href="http://cknoll.github.io/None">Feed</a>
+                    <br>
+                    <img src="http://hitwebcounter.com/counter/counter.php?page=5857611&style=0008&nbdigits=5&type=ip&initCount=0" title="paste and get counter working" Alt="paste and get counter working"   border="0" >
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>
