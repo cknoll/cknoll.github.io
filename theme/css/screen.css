@@ -233,7 +233,7 @@ form.inline_edit {
 	background-color: #DDD;
 	}
 #nav li.selected a {
-	background-color: #000;
+	background-color: #AAA;
 	color: #FFF;
 	}
 #nav li.ephemeral.selected a {
