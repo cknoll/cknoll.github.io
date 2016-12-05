@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog:cknoll</title><link>http://cknoll.github.io/</link><description></description><lastBuildDate>Fri, 25 Nov 2016 21:30:00 +0100</lastBuildDate><item><title>Emails signieren und verschlüsseln</title><link>http://cknoll.github.io/emails-signieren.html</link><description>&lt;hr /&gt;
+<rss version="2.0"><channel><title>blog:cknoll</title><link>http://localhost:8000/</link><description></description><lastBuildDate>Fri, 25 Nov 2016 21:30:00 +0100</lastBuildDate><item><title>Emails signieren und verschlüsseln</title><link>http://localhost:8000/emails-signieren.html</link><description>&lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;Zusammenfassung:&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;Emailsignaturen: Ein Anhang "signature.asc" kann durch geschickte Anwendung kryptografischer Verfahren die Echtheit einer Email bezeugen (richtiger Absender, unveränderter Inhalt).&lt;/p&gt;
 &lt;hr /&gt;
@@ -25,11 +25,11 @@ Was bedeutet eigentlich der Anhang "signature.asc"?
 ...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In jedem Fall bin ich der Meinung, dass das Signieren von Mails eine sanfte Möglichkeit ist, auf das Thema Emailsicherheit hinzuweisen.&lt;/p&gt;
-&lt;p&gt;Hier mein öffentlicher Schlüssel: &lt;a href="http://cknoll.github.io/files/pub-key-carsten.txt"&gt;pub-key-carsten.txt&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hier mein öffentlicher Schlüssel: &lt;a href="http://localhost:8000/files/pub-key-carsten.txt"&gt;pub-key-carsten.txt&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Um sicher zu sein, dass es wirklich mein Schlüssel ist (und nicht ein anderer, der in böser Absicht auf den Server geladen wurde), sollte man den Schlüssel bei Gelegenheit signieren, am besten bei einem persönlichen treffen.&lt;/p&gt;
-&lt;p&gt;Mehr Infos zum Verschlüsseln und Signieren gibt es z.B. unter &lt;a href="https://virtual-privacy.org/"&gt;https://virtual-privacy.org/&lt;/a&gt; oder sehr gerne auf &lt;a href="http://cknoll.github.io/pages/impressum.html"&gt;Nachfrage&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Fri, 25 Nov 2016 21:30:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2016-11-25:emails-signieren.html</guid><category>Software</category><category>Verschlüsselung</category></item><item><title>Zim - Ein nützliches Programm zur besseren Beherrschung der Informationsflut</title><link>http://cknoll.github.io/zim.html</link><description>&lt;hr /&gt;
+&lt;p&gt;Mehr Infos zum Verschlüsseln und Signieren gibt es z.B. unter &lt;a href="https://virtual-privacy.org/"&gt;https://virtual-privacy.org/&lt;/a&gt; oder sehr gerne auf &lt;a href="http://localhost:8000/pages/impressum.html"&gt;Nachfrage&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Fri, 25 Nov 2016 21:30:00 +0100</pubDate><guid isPermaLink="false">tag:localhost:8000,2016-11-25:emails-signieren.html</guid><category>Software</category><category>Verschlüsselung</category></item><item><title>Zim - Ein nützliches Programm zur besseren Beherrschung der Informationsflut</title><link>http://localhost:8000/zim.html</link><description>&lt;hr /&gt;
 &lt;p&gt;&lt;a href="http://www.zim-wiki.org/"&gt;http://www.zim-wiki.org/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Seit dem ich es kenne, ist mir klar, dass ich es immer vermisst habe. Ein Programm, in dem man mit wenig Aufwand über die Zeit einen persönlichen Speicher für wichtige und weniger wichtige Informationen anlegen kann - und dabei a priori noch nicht wissen muss, in welche dieser Kategorien ein Informationsfragment fällt. Erstmal speichern, die Struktur ergibt sich im Lauf der Zeit (fast) von allein.&lt;/p&gt;
+&lt;p&gt;Seitdem ich es kenne, ist mir klar, dass ich es immer vermisst habe. Ein Programm, in dem man mit wenig Aufwand über die Zeit einen persönlichen Speicher für wichtige und weniger wichtige Informationen anlegen kann - und dabei a priori noch nicht wissen muss, in welche dieser Kategorien ein Informationsfragment fällt. Erstmal speichern, die Struktur ergibt sich im Lauf der Zeit (fast) von allein.&lt;/p&gt;
 &lt;p&gt;Das Wiki-Prinzip bringt die bekannten Merkmale mit: Unkompliziertes Anlegen neuer Seiten, einfachste Verlinkung zwischen Einträgen, Navigationshilfen, Suche auf der aktuellen Seite oder in allen Seiten, Texthervorhebung, Einfügen von Bildern (direkt aus der Zwischenablage).&lt;/p&gt;
 &lt;p&gt;Weil es ein &lt;strong&gt;Desktop-Wiki&lt;/strong&gt; ist und folglich nicht im Browser oder auf einem Server lebt, hat es einige Vorteile gegenüber einem Wiki im Web:&lt;/p&gt;
 &lt;ul&gt;
@@ -45,7 +45,7 @@ Was bedeutet eigentlich der Anhang "signature.asc"?
 &lt;li&gt;(Zwischen-)Ergebnisse von Literaturrecherchen&lt;/li&gt;
 &lt;li&gt;Bisher unbekannte Fachbegriffen, zusammenkopierten Definitionen und Beispielen mit eigenen Ergänzungen&lt;/li&gt;
 &lt;li&gt;Wichtigen Internetlinks, zusammen mit Zusatzinformationen&lt;/li&gt;
-&lt;li&gt;Quellcode-Schnipsel, Konsolen-Befehle, Tipps zur Bedienung von Programmen&lt;/li&gt;
+&lt;li&gt;Quellcode-Schnibsel, Konsolen-Befehle, Tipps zur Bedienung von Programmen&lt;/li&gt;
 &lt;li&gt;Organisatorischen Informationen, Gesprächsnotizen und TODO-Listen&lt;/li&gt;
 &lt;li&gt;Entwürfen von Mails (ggf. mit noch unbekanntem Empfänger)&lt;/li&gt;
 &lt;li&gt;Interessanten Zitaten und Quellen&lt;/li&gt;
@@ -71,7 +71,7 @@ Ganz nebenbei: wie viele hervorragende Programme steht es unter einer freien Liz
 &lt;li&gt;
 &lt;p&gt;Dieser Text soll im Wesentlichen zur Nutzung von zim anregen und ersetzt nicht die reguläre Dokumentation (erreichbar über F1).&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Wed, 16 Nov 2016 14:30:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2016-11-16:zim.html</guid><category>Software</category><category>OpenSource</category><category>Tipps</category></item><item><title>Schadens-Reduktion bei verlorenem USB-Stick</title><link>http://cknoll.github.io/usb-stick-vergessen.html</link><description>&lt;hr /&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Wed, 16 Nov 2016 14:30:00 +0100</pubDate><guid isPermaLink="false">tag:localhost:8000,2016-11-16:zim.html</guid><category>Software</category><category>OpenSource</category><category>Tipps</category></item><item><title>Schadens-Reduktion bei verlorenem USB-Stick</title><link>http://localhost:8000/usb-stick-vergessen.html</link><description>&lt;hr /&gt;
 &lt;p&gt;Mir ist es selbst schon mehrfach passiert: einen USB-Stick mit mehr oder weniger wichtigen Daten stecken lassen. Im PC-Pool, im Copy-Shop, bei Bekannten.
 Ungefähr genau so oft habe ich auch schon fremde Sticks gefunden - d.h. das Problem scheinen andere Menschen auch zu haben.
 Ich gehe sogar soweit zu sagen: Es ist keine Frage, ob es passiert, sondern nur wann.
@@ -89,8 +89,8 @@ Der materielle Verlust ist oft das geringere Problem. Es geht um die Daten und d
   Habe in bisher zwei von zwei Fällen den Stick wiederbekommen. Ein netter Nebeneffekt: Wenn man mehrere Sticks in Benutzung hat kann man sie durch passende Bezeichnung auseinander halten.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src="http://cknoll.github.io/images/stick1.jpg" alt="beschrifteter USB-Stick" style="width: 400px;"/&gt;&lt;/p&gt;
-&lt;p&gt;Ich bin mir ziemlich sicher, ich werde irgendwann demnächst mal wieder irgendwo einen USB-Stick vergessen. Durch Beschriftung und Verschlüsselung ist das aber halb so schlimm.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Mon, 14 Nov 2016 22:00:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2016-11-14:usb-stick-vergessen.html</guid><category>Tipp</category></item><item><title>Vorschlag: "uder" ein neues deutsches Wort für "und/oder" (=einschließendes "oder")</title><link>http://cknoll.github.io/uder.html</link><description>&lt;hr /&gt;
+&lt;p&gt;&lt;img src="http://localhost:8000/images/stick1.jpg" alt="beschrifteter USB-Stick" style="width: 400px;"/&gt;&lt;/p&gt;
+&lt;p&gt;Ich bin mir ziemlich sicher, ich werde irgendwann demnächst mal wieder irgendwo einen USB-Stick vergessen. Durch Beschriftung und Verschlüsselung ist das aber halb so schlimm.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Mon, 14 Nov 2016 22:00:00 +0100</pubDate><guid isPermaLink="false">tag:localhost:8000,2016-11-14:usb-stick-vergessen.html</guid><category>Tipp</category></item><item><title>Vorschlag: "uder" ein neues deutsches Wort für "und/oder" (=einschließendes "oder")</title><link>http://localhost:8000/uder.html</link><description>&lt;hr /&gt;
 &lt;p&gt;Die folgenden Gedanken lassen sich am prägnantesten in Form von Thesen formulieren.
 Naturgemäß wird eine subjektive Sicht der Dinge dargestellt.&lt;/p&gt;
 &lt;ol&gt;
@@ -117,7 +117,7 @@ Naturgemäß wird eine subjektive Sicht der Dinge dargestellt.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Ich bin alles andere als ein Experte auf dem Gebiet der Linguistik.
-Die Idee zu "uder" entstand während des Schreibens von Emails. Vielleicht gibt es das schon, oder es sprechen gute Gründe dagegen, dieses Wort zu benutzen. In diesem Fall würde ich mich über eine Rückmeldung freuen. Wer mir seine Meinung zu dem Vorschlag uder konkrete Anregungen mitteilen möchte schreibt mir am besten eine &lt;a href="http://cknoll.github.io/pages/impressum.html"&gt;Email&lt;/a&gt;.&lt;/p&gt;
+Die Idee zu "uder" entstand während des Schreibens von Emails. Vielleicht gibt es das schon, oder es sprechen gute Gründe dagegen, dieses Wort zu benutzen. In diesem Fall würde ich mich über eine Rückmeldung freuen. Wer mir seine Meinung zu dem Vorschlag uder konkrete Anregungen mitteilen möchte schreibt mir am besten eine &lt;a href="http://localhost:8000/pages/impressum.html"&gt;Email&lt;/a&gt;.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;Fußnoten:&lt;/p&gt;
 &lt;div class="footnote"&gt;
@@ -130,7 +130,7 @@ Die Idee zu "uder" entstand während des Schreibens von Emails. Vielleicht gibt 
 &lt;p&gt;Nach Einschätzung der jeweiligen Redaktion.&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Thu, 04 Dec 2014 22:00:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2014-12-04:uder.html</guid><category>Sprache</category></item><item><title>Gründung einer Open-Source-Initiative an der TU Dresden (Auftakt: 8.12. 18:30, WIL B321)</title><link>http://cknoll.github.io/fsfi.html</link><description>&lt;hr /&gt;
+&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Thu, 04 Dec 2014 22:00:00 +0100</pubDate><guid isPermaLink="false">tag:localhost:8000,2014-12-04:uder.html</guid><category>Sprache</category></item><item><title>Gründung einer Open-Source-Initiative an der TU Dresden (Auftakt: 8.12. 18:30, WIL B321)</title><link>http://localhost:8000/fsfi.html</link><description>&lt;hr /&gt;
 &lt;p&gt;An der TU Dresden gibt es viele (studentische) &lt;a href="https://www.stura.tu-dresden.de/hochschulgruppen"&gt;Hochschulgruppen&lt;/a&gt;, aber keine die sich "hauptamtlich" mit Freier Software und Freier Information (Open Source / Open Knowledge) beschäftigt. Dabei gäbe es gerade an einer Universität für eine solche Gruppe viel Entfaltungspotenzial. Deshalb möchte ich zusammen mit anderen TU-Mitarbeiter_innen und Studierenden eine solche Gruppe gründen. Ich sehe zwei wesentliche Aktivitätsfelder einer solchen Gruppe:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -142,8 +142,14 @@ Die Idee zu "uder" entstand während des Schreibens von Emails. Vielleicht gibt 
 &lt;/ol&gt;
 &lt;p&gt;An einer so großen Uni wie der TUD sollte es mehr als genug Menschen (Studierende und Mitarbeiter_innen) geben, die sich für diese Themen interessieren und die dazu einen substantiellen Beitrag leisten können.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; &lt;em&gt;Am Mo., 8.12., 18:30 Uhr, findet im Raum &lt;a href="https://navigator.tu-dresden.de/etplan/wil/02/raum/219302.0630"&gt;WIL B321&lt;/a&gt; das erste Treffen in gößerer Runde zum Ideen sammeln und strukturieren statt.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Wer nähere Informationen zu der Gruppe oder zum Auftakttreffen bekommen oder sich evtl. sogar in die Gründung einbringen möchte, kann sich gerne &lt;a href="http://cknoll.github.io/pages/impressum.html"&gt;bei mir melden&lt;/a&gt;. Fragen, Anregungen und Kritik nehme ich ebenfalls entgegen.&lt;/p&gt;
-&lt;hr /&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Thu, 13 Nov 2014 22:00:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2014-11-13:fsfi.html</guid><category>OpenSource</category><category>Uni</category><category>Organisatorisches</category></item><item><title>WikidPad - Ein nützliches Programm zur besseren Beherrschung der Informationsflut</title><link>http://cknoll.github.io/wikidpad.html</link><description>&lt;hr /&gt;
+&lt;p&gt;Wer nähere Informationen zu der Gruppe oder zum Auftakttreffen bekommen oder sich evtl. sogar in die Gründung einbringen möchte, kann sich gerne &lt;a href="http://localhost:8000/pages/impressum.html"&gt;bei mir melden&lt;/a&gt;. Fragen, Anregungen und Kritik nehme ich ebenfalls entgegen.&lt;/p&gt;
+&lt;hr /&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Thu, 13 Nov 2014 22:00:00 +0100</pubDate><guid isPermaLink="false">tag:localhost:8000,2014-11-13:fsfi.html</guid><category>OpenSource</category><category>Uni</category><category>Organisatorisches</category></item><item><title>WikidPad - Ein nützliches Programm zur besseren Beherrschung der Informationsflut</title><link>http://localhost:8000/wikidpad.html</link><description>&lt;hr /&gt;
+&lt;h2&gt;Update (2016-12-05)&lt;/h2&gt;
+&lt;p&gt;Das im nachfolgenden Artikel beschriebene Programm &lt;em&gt;Wikidpad&lt;/em&gt; habe ich 2009 kennengelernt. Damals habe ich es aus technischen Gründen dem Programm &lt;em&gt;Zim&lt;/em&gt; vorgezogen.
+Die technische Entwicklung ist inzwischen aber fortgeschritten. Wenngleich ich WikidPad nach wie vor intensiv und mit Freude benutze, halte ich aus aktueller Perspektive (Ende 2016)
+zim für das bessere Desktop-Wiki. Deswegen habe ich den Lobpreistext mit neuer Überschrift und geringfügigen inhaltlichen Anpassungen als neuen Beitrag veröffentlicht:
+→ &lt;a href="zim.html"&gt;Zim: Motivation und Beschreibung eines OpenSource Desktop-Wikis&lt;/a&gt; &lt;/p&gt;
+&lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;Der folgende Text ist (im wesentlichen) identisch mit dem gleichnamigen Artikel
 in der &lt;a href="http://www.fsret.de/download/barnews/BARnews_68_online.pdf"&gt;BARnews, Nr. 68&lt;/a&gt;
 (Zeitschrift des &lt;a href="http://www.fsret.de/"&gt;Fachschaftsrats Elektrotechnik&lt;/a&gt;, TU Dresden).&lt;/em&gt;&lt;/p&gt;
@@ -155,7 +161,7 @@ in der &lt;a href="http://www.fsret.de/download/barnews/BARnews_68_online.pdf"&g
 &lt;li&gt;Einfacheres Weiterempfehlen&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr /&gt;
-&lt;p&gt;Seit dem ich es nutze, ist mir klar, dass ich es immer vermisst habe. Ein Programm, in dem man mit wenig Aufwand über die Zeit einen persönlichen Speicher für wichtige und weniger wichtige Informationen anlegen kann - und dabei a priori noch nicht wissen muss, in welche dieser Kategorien ein Informationsfragment fällt. Erstmal speichern, die Struktur ergibt sich im Lauf der Zeit (fast) von allein.&lt;/p&gt;
+&lt;p&gt;Seitdem ich es nutze, ist mir klar, dass ich es immer vermisst habe. Ein Programm, in dem man mit wenig Aufwand über die Zeit einen persönlichen Speicher für wichtige und weniger wichtige Informationen anlegen kann - und dabei a priori noch nicht wissen muss, in welche dieser Kategorien ein Informationsfragment fällt. Erstmal speichern, die Struktur ergibt sich im Lauf der Zeit (fast) von allein.&lt;/p&gt;
 &lt;p&gt;Das Wiki-Prinzip bringt die bekannten Merkmale mit: Unkompliziertes Anlegen neuer Seiten, einfachste Verlinkung zwischen Einträgen, Navigationshilfen, Suche auf der aktuellen Seite oder in allen Seiten, Texthervorhebung, Einfügen von Bildern (direkt aus der Zwischenablage).&lt;/p&gt;
 &lt;p&gt;Weil es ein &lt;strong&gt;Desktop-Wiki&lt;/strong&gt; ist und folglich nicht im Browser oder auf einem Server lebt, hat es einige Vorteile gegenüber einem Wiki im Web: Es lässt sich fast vollständig mit Tastatur bedienen, reagiert immer schnell und flüssig, die Datenbank lässt sich unkompliziert sichern, durch einfaches Kopieren der entsprechenden Datei. Und natürlich ist man nicht von einer Internetverbindung abhängig.&lt;/p&gt;
 &lt;p&gt;Insbesondere für Studierende und Doktorand_innen ist es ein ideales Tool zum Festhalten von:&lt;/p&gt;
@@ -200,4 +206,4 @@ Ganz nebenbei: wie viele hervorragende Programme steht es unter einer freien Liz
 &lt;li&gt;
 &lt;p&gt;[5] &lt;a href="https://groups.yahoo.com/neo/groups/wikidPad/info"&gt;WikidPad Yahoo-Gruppe&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Mon, 10 Nov 2014 20:00:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2014-11-10:wikidpad.html</guid><category>Software</category><category>OpenSource</category><category>Tipps</category></item></channel></rss>
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Mon, 10 Nov 2014 20:00:00 +0100</pubDate><guid isPermaLink="false">tag:localhost:8000,2014-11-10:wikidpad.html</guid><category>Software</category><category>OpenSource</category><category>Tipps</category></item></channel></rss>
