@@ -27,7 +27,13 @@ Was bedeutet eigentlich der Anhang "signature.asc"?
 &lt;p&gt;In jedem Fall bin ich der Meinung, dass das Signieren von Mails eine sanfte Möglichkeit ist, auf das Thema Emailsicherheit hinzuweisen.&lt;/p&gt;
 &lt;p&gt;Hier mein öffentlicher Schlüssel: &lt;a href="http://cknoll.github.io/files/pub-key-carsten.txt"&gt;pub-key-carsten.txt&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Um sicher zu sein, dass es wirklich mein Schlüssel ist (und nicht ein anderer, der in böser Absicht auf den Server geladen wurde), sollte man den Schlüssel bei Gelegenheit signieren, am besten bei einem persönlichen treffen.&lt;/p&gt;
-&lt;p&gt;Mehr Infos zum Verschlüsseln und Signieren gibt es z.B. unter &lt;a href="https://virtual-privacy.org/"&gt;https://virtual-privacy.org/&lt;/a&gt; oder sehr gerne auf &lt;a href="http://cknoll.github.io/pages/impressum.html"&gt;Nachfrage&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Fri, 25 Nov 2016 21:30:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2016-11-25:emails-signieren.html</guid><category>Software</category><category>Verschlüsselung</category></item><item><title>Zim - Ein nützliches Programm zur besseren Beherrschung der Informationsflut</title><link>http://cknoll.github.io/zim.html</link><description>&lt;hr /&gt;
+&lt;h2&gt;&lt;a href="#links"&gt;Links&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Mehr Infos zum Verschlüsseln und Signieren gibt es z.B. hier:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://virtual-privacy.org/"&gt;https://virtual-privacy.org/&lt;/a&gt;, &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://fsfw-dresden.de/gpg"&gt;http://fsfw-dresden.de/gpg&lt;/a&gt;, &lt;/li&gt;
+&lt;li&gt;oder sehr gerne auf &lt;a href="http://cknoll.github.io/pages/impressum.html"&gt;Nachfrage&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Fri, 25 Nov 2016 21:30:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2016-11-25:emails-signieren.html</guid><category>Software</category><category>Verschlüsselung</category></item><item><title>Zim - Ein nützliches Programm zur besseren Beherrschung der Informationsflut</title><link>http://cknoll.github.io/zim.html</link><description>&lt;hr /&gt;
 &lt;p&gt;&lt;a href="http://www.zim-wiki.org/"&gt;http://www.zim-wiki.org/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Seitdem ich es kenne, ist mir klar, dass ich es immer vermisst habe. Ein Programm, in dem man mit wenig Aufwand über die Zeit einen persönlichen Speicher für wichtige und weniger wichtige Informationen anlegen kann - und dabei a priori noch nicht wissen muss, in welche dieser Kategorien ein Informationsfragment fällt. Erstmal speichern, die Struktur ergibt sich im Lauf der Zeit (fast) von allein.&lt;/p&gt;
 &lt;p&gt;Das Wiki-Prinzip bringt die bekannten Merkmale mit: Unkompliziertes Anlegen neuer Seiten, einfachste Verlinkung zwischen Einträgen, Navigationshilfen, Suche auf der aktuellen Seite oder in allen Seiten, Texthervorhebung, Einfügen von Bildern (direkt aus der Zwischenablage).&lt;/p&gt;
@@ -71,7 +77,7 @@ Ganz nebenbei: wie viele hervorragende Programme steht es unter einer freien Liz
 &lt;li&gt;
 &lt;p&gt;Dieser Text soll im Wesentlichen zur Nutzung von zim anregen und ersetzt nicht die reguläre Dokumentation (erreichbar über F1).&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Wed, 16 Nov 2016 14:30:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2016-11-16:zim.html</guid><category>Software</category><category>OpenSource</category><category>Tipps</category></item><item><title>Schadens-Reduktion bei verlorenem USB-Stick</title><link>http://cknoll.github.io/usb-stick-vergessen.html</link><description>&lt;hr /&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Wed, 16 Nov 2016 14:30:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2016-11-16:zim.html</guid><category>Software</category><category>OpenSource</category><category>Tipps</category></item><item><title>Schadens-Reduktion bei verlorenem USB-Stick: Beschriften und Verschlüsseln</title><link>http://cknoll.github.io/usb-stick-vergessen.html</link><description>&lt;hr /&gt;
 &lt;p&gt;Mir ist es selbst schon mehrfach passiert: einen USB-Stick mit mehr oder weniger wichtigen Daten stecken lassen. Im PC-Pool, im Copy-Shop, bei Bekannten.
 Ungefähr genau so oft habe ich auch schon fremde Sticks gefunden - d.h. das Problem scheinen andere Menschen auch zu haben.
 Ich gehe sogar soweit zu sagen: Es ist keine Frage, ob es passiert, sondern nur wann.
