@@ -27,7 +27,7 @@ Was bedeutet eigentlich der Anhang "signature.asc"?
 &lt;p&gt;In jedem Fall bin ich der Meinung, dass das Signieren von Mails eine sanfte Möglichkeit ist, auf das Thema Emailsicherheit hinzuweisen.&lt;/p&gt;
 &lt;p&gt;Hier mein öffentlicher Schlüssel: &lt;a href="http://cknoll.github.io/files/pub-key-carsten.txt"&gt;pub-key-carsten.txt&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Um sicher zu sein, dass es wirklich mein Schlüssel ist (und nicht ein anderer, der in böser Absicht auf den Server geladen wurde), sollte man den Schlüssel bei Gelegenheit signieren, am besten bei einem persönlichen treffen.&lt;/p&gt;
-&lt;h2&gt;&lt;a href="#links"&gt;Links&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a name="ems-links"&gt;&lt;/a&gt; Links&lt;/h2&gt;
 &lt;p&gt;Mehr Infos zum Verschlüsseln und Signieren gibt es z.B. hier:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://virtual-privacy.org/"&gt;https://virtual-privacy.org/&lt;/a&gt;, &lt;/li&gt;
