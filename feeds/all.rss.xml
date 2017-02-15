@@ -3,6 +3,7 @@
 &lt;p&gt;&lt;strong&gt;Zusammenfassung:&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;Emailsignaturen: Ein Anhang "signature.asc" kann durch geschickte Anwendung kryptografischer Verfahren die Echtheit einer Email bezeugen (richtiger Absender, unveränderter Inhalt).&lt;/p&gt;
 &lt;hr /&gt;
+&lt;p&gt;XXXX&lt;/p&gt;
 &lt;p&gt;Ein großer Teil unserer Kommunikation basiert auf Emails.
 Spätestens seit dem NSA-Skandal ist aber vielen Menschen bewusst, dass Emails letztlich nur Textdateien sind, die zwischen verschiedenen Computern kopiert werden.
 Dabei können folgenden Probleme auftreten:&lt;/p&gt;

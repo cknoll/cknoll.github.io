@@ -28,42 +28,18 @@
 <h2 class="title">
                         <a href="http://cknoll.github.io/emails-signieren.html" rel="bookmark" title="Permanent Link to &quot;Emails signieren und verschlüsseln&quot;">Emails signieren und verschlüsseln</a>
                     </h2>
-
-                    <hr />
+                    
+                    
+                    
+                     
+                     <hr />
 <p><strong>Zusammenfassung:</strong> </p>
 <p>Emailsignaturen: Ein Anhang "signature.asc" kann durch geschickte Anwendung kryptografischer Verfahren die Echtheit einer Email bezeugen (richtiger Absender, unveränderter Inhalt).</p>
 <hr />
-<p>Ein großer Teil unserer Kommunikation basiert auf Emails.
-Spätestens seit dem NSA-Skandal ist aber vielen Menschen bewusst, dass Emails letztlich nur Textdateien sind, die zwischen verschiedenen Computern kopiert werden.
-Dabei können folgenden Probleme auftreten:</p>
-<ol>
-<li>Die Email kann unterwegs von unbefugten Personen/Programmen gelesen werden.</li>
-<li>Die Absenderadresse kann gefälscht sein.</li>
-<li>Der Inhalt kann geändert worden sein.</li>
-</ol>
-<p>Gegen Problem (1) hilft Email-Verschlüsselung, gegen (2) und (3) das Signieren von Emails (mit fancy Krypto-Methoden).
-Am besten ist natürlich eine Kombination von beiden.
-Allerdings haben viele Menschen bisher noch keine Mail-Verschlüsselung für sich eingerichtet (Schätzung: 90% meiner Mail-Kontakte). Mit <em>eingerichtet</em> meine ich: Ein Schlüsselpaar (aus privatem und öffentlichem Schlüssel) erzeugt und den öffentlichen Schlüssel veröffentlicht. Mit diesen Menschen kann ich nicht verschlüsselt kommunizieren, weil ich dafür ihren öffentlichen Schlüssel bräuchte.</p>
-<p>Ich kann aber sehr wohl alle meine Mails signieren. Mein Mailprogramm (Mozilla Thunderbird) hängt dann eine Datei namens <strong>signature.asc</strong> an die Mail an. Damit können alle Menschen die meinen öffentlichen Schlüssel haben, verifizieren, dass die Mail von mir kommt und unterwegs nicht verändert wurde (siehe Probleme (2) und (3)). Wenn das Mailprogramm (z.B. Thunderbird mit der Erweiterung Enigmail) passend konfiguriert ist, passiert das automatisch.
-Andernfalls wird der Anhang eben als Text-Datei mit scheinbar bedeutungslosen Kombinationen aus Buchstaben und Zahlen behandelt. Diese Datei kann entweder ignoriert werden - oder sie löst Verwunderung aus, welche u.U. zum Lesen dieses Artikels führt. Auch dann war es sinnvoll.</p>
-<p>Wie so oft muss man übrigens aufpassen was gemeint ist: Als Email-Signatur wird neben der hier besprochenen "Echtheits-Signatur" oft auch ein kurzer Text bezeichnet, der automatisch an jede ausgehende Mail angehangen wird. Der kann z.B. Grußformeln, Kontaktdaten oder URLs enthalten - oder auch Hinweise zur verschlüsselten Kommunikation.
-Ich habe in meinen ausgehenden Mails explizit, diesen Artikel hier verklinkt:</p>
-<pre><code>--
 ...
-Was bedeutet eigentlich der Anhang "signature.asc"?
--&gt; http://cknoll.github.io/emails-signieren.html
-...
-</code></pre>
-<p>In jedem Fall bin ich der Meinung, dass das Signieren von Mails eine sanfte Möglichkeit ist, auf das Thema Emailsicherheit hinzuweisen.</p>
-<p>Hier mein öffentlicher Schlüssel: <a href="http://cknoll.github.io/files/pub-key-carsten.txt">pub-key-carsten.txt</a>.</p>
-<p>Um sicher zu sein, dass es wirklich mein Schlüssel ist (und nicht ein anderer, der in böser Absicht auf den Server geladen wurde), sollte man den Schlüssel bei Gelegenheit signieren, am besten bei einem persönlichen treffen.</p>
-<h2><a name="ems-links"></a> Links</h2>
-<p>Mehr Infos zum Verschlüsseln und Signieren gibt es z.B. hier:</p>
-<ul>
-<li><a href="https://virtual-privacy.org/">https://virtual-privacy.org/</a>, </li>
-<li><a href="http://fsfw-dresden.de/gpg">http://fsfw-dresden.de/gpg</a>, </li>
-<li>oder sehr gerne auf <a href="http://cknoll.github.io/pages/impressum.html">Nachfrage</a>.</li>
-</ul>
+                     
+                    <a href="http://cknoll.github.io/emails-signieren.html" rel="bookmark" title="Read more: &quot;Emails signieren und verschlüsseln&quot;"> (Artikel lesen) </a>
+                    
 
                     <div class="clear"></div>
                     <div class="info">
@@ -81,52 +57,16 @@ Was bedeutet eigentlich der Anhang "signature.asc"?
 <h2 class="title">
                         <a href="http://cknoll.github.io/zim.html" rel="bookmark" title="Permanent Link to &quot;Zim - Ein nützliches Programm zur besseren Beherrschung der Informationsflut&quot;">Zim - Ein nützliches Programm zur besseren Beherrschung der Informationsflut</a>
                     </h2>
-
-                    <hr />
+                    
+                    
+                    
+                     
+                     <hr />
 <p><a href="http://www.zim-wiki.org/">http://www.zim-wiki.org/</a></p>
-<p>Seitdem ich es kenne, ist mir klar, dass ich es immer vermisst habe. Ein Programm, in dem man mit wenig Aufwand über die Zeit einen persönlichen Speicher für wichtige und weniger wichtige Informationen anlegen kann - und dabei a priori noch nicht wissen muss, in welche dieser Kategorien ein Informationsfragment fällt. Erstmal speichern, die Struktur ergibt sich im Lauf der Zeit (fast) von allein.</p>
-<p>Das Wiki-Prinzip bringt die bekannten Merkmale mit: Unkompliziertes Anlegen neuer Seiten, einfachste Verlinkung zwischen Einträgen, Navigationshilfen, Suche auf der aktuellen Seite oder in allen Seiten, Texthervorhebung, Einfügen von Bildern (direkt aus der Zwischenablage).</p>
-<p>Weil es ein <strong>Desktop-Wiki</strong> ist und folglich nicht im Browser oder auf einem Server lebt, hat es einige Vorteile gegenüber einem Wiki im Web:</p>
-<ul>
-<li>Es lässt sich fast vollständig mit Tastatur bedienen</li>
-<li>reagiert immer schnell und flüssig</li>
-<li>die Datenbank lässt sich unkompliziert sichern (Kopieren der entsprechenden Dateien)</li>
-<li>bessere Zugriffskontrolle</li>
-<li>unabhängig von Internetverbindung nutzbar</li>
-</ul>
-<p>Insbesondere für Studierende und Doktorand*innen ist es ein ideales Tool zum Festhalten von:</p>
-<ul>
-<li>Ideen oder Fragestellungen, ggf. auch noch sehr unkonkreten</li>
-<li>(Zwischen-)Ergebnisse von Literaturrecherchen</li>
-<li>Bisher unbekannte Fachbegriffen, zusammenkopierten Definitionen und Beispielen mit eigenen Ergänzungen</li>
-<li>Wichtigen Internetlinks, zusammen mit Zusatzinformationen</li>
-<li>Quellcode-Schnibsel, Konsolen-Befehle, Tipps zur Bedienung von Programmen</li>
-<li>Organisatorischen Informationen, Gesprächsnotizen und TODO-Listen</li>
-<li>Entwürfen von Mails (ggf. mit noch unbekanntem Empfänger)</li>
-<li>Interessanten Zitaten und Quellen</li>
-<li>und allen anderen Gedankenblitzen, die momentan vielleicht gerade nicht so ultra-relevant sind, aber auf jeden Fall zu schade zum Vergessen.</li>
-</ul>
-<p>Es ist also eine Art elektronisches Notizbuch mit unendlich vielen Seiten, Querverweisen und Suchfunktion.</p>
-<p>Die für mich wichtigsten Spezial-Funktionen:</p>
-<p>Die globale Suchfunktion, wodurch man fast alles wiederfindet, wenn man auf der jeweiligen Seite die entsprechenden Schlüsselworte aufschreibt (<em>"Leitfrage: wonach würde ich nächstes Jahr suchen, wenn ich das hier wiederfinden will?"</em>).</p>
-<p>Das direkte Einfügen von Bildern aus der Zwischenablage, z.B. (partielle) Screenshots. Damit kriegt man einen relevanten Ausschnitt von GoogleBooks im Handumdrehen sinnvoll abgespeichert.</p>
-<p>Das <strong>Einfügen von LaTeX-Formeln</strong> (die man beim Kopieren von Sachen aus Wikipedia meist eh schon in der Zwischenablage hat). Das geht über "Insert-&gt;Equatioin" Dazu muss das Plugin "Insert Equations" aktiviert sein (Edit-&gt; Preferences-&gt;Plugins).</p>
-<p>Wie jedes andere komplexe Programm auch, erfordert <em>zim</em> ein bisschen Einarbeitungszeit. Einerseits, um mit dem Programm umzugehen, und die wichtigsten Tastenkombinationen zu lernen (siehe "Help" -&gt; "getting started" -&gt; "keybindings"). Was aber länger dauert, ist, das eigene Wiki mit Inhalt zu füttern. Auch wenn das Anlegen, Suchen, Verlinken etc. von einzelnen Einträgen schnell geht, insgesamt kommt schon ein bisschen Zeit zusammen. Der Nutzen eines noch fast leeren Wikis ist zunächst eher gering, abgesehen von dem guten und befreienden Gefühl, die Gedanken, Ideen, Rechercheergebnisse etc. an einem sicheren Ort und wiederauffindbar abgelegt zu haben. Und dem Effekt das beim Aufschreiben sich manchmal eine Ideen-Kaskade ergibt.</p>
-<p>Mit der Zeit aber wird der Anteil des "Erntens" immer größer, was das weitere "Sähen" natürlich um so mehr motiviert. Vielleicht nicht mehr in der Quantität wie am Anfang aber dafür gezielter und strukturierter. Schließlich gibt es ja jetzt schon eine (dynamische) Struktur in die Neues eingebaut werden kann.</p>
-<p>Natürlich, gibt es unter der Überschrift "persönliche Informationsverwaltung" auch noch andere Lösungen (z.B. Evernote, WikidPad,...) mit anderen Schwerpunkten. Aber zim finde ich (inzwischen) persönlich am besten.
-Ganz nebenbei: wie viele hervorragende Programme steht es unter einer freien Lizenz und ist damit kostenlos. Außerdem ist es in <strong>Python</strong> geschrieben und kann darin auch in Form von Plugins erweitert werden.</p>
-<p>Kurzum, für Menschen die oft und viel Informationen mit einem Computer verarbeiten, ist es ein sehr nützliches Programm, um den Überblick zu behalten oder um ihn sich erstmal zu verschaffen.</p>
-<p><a href="http://www.zim-wiki.org/">http://www.zim-wiki.org/</a></p>
-<hr />
-<p>Hinweise:</p>
-<ul>
-<li>
-<p>Der Text wurde ursprünglich für ein anderes Desktop-Wiki (Wikidpad) geschrieben und dann auf zim angepasst. Der entsprechende <a href="https://vimeo.com/111451468">Screencast</a> ist ggf. trotzdem nützlich.</p>
-</li>
-<li>
-<p>Dieser Text soll im Wesentlichen zur Nutzung von zim anregen und ersetzt nicht die reguläre Dokumentation (erreichbar über F1).</p>
-</li>
-</ul>
+<p>Seitdem ich es kenne, ist mir klar, dass ich es immer vermisst habe. Ein Programm, in dem man mit wenig Aufwand über die Zeit einen persönlichen Speicher für wichtige und weniger wichtige Informationen anlegen kann...
+                     
+                    <a href="http://cknoll.github.io/zim.html" rel="bookmark" title="Read more: &quot;Zim - Ein nützliches Programm zur besseren Beherrschung der Informationsflut&quot;"> (Artikel lesen) </a>
+                    
 
                     <div class="clear"></div>
                     <div class="info">
@@ -145,27 +85,17 @@ Ganz nebenbei: wie viele hervorragende Programme steht es unter einer freien Liz
 <h2 class="title">
                         <a href="http://cknoll.github.io/usb-stick-vergessen.html" rel="bookmark" title="Permanent Link to &quot;Schadens-Reduktion bei verlorenem USB-Stick: Beschriften und Verschlüsseln&quot;">Schadens-Reduktion bei verlorenem USB-Stick: Beschriften und Verschlüsseln</a>
                     </h2>
-
-                    <hr />
+                    
+                    
+                    
+                     
+                     <hr />
 <p>Mir ist es selbst schon mehrfach passiert: einen USB-Stick mit mehr oder weniger wichtigen Daten stecken lassen. Im PC-Pool, im Copy-Shop, bei Bekannten.
 Ungefähr genau so oft habe ich auch schon fremde Sticks gefunden - d.h. das Problem scheinen andere Menschen auch zu haben.
-Ich gehe sogar soweit zu sagen: Es ist keine Frage, ob es passiert, sondern nur wann.
-Der materielle Verlust ist oft das geringere Problem. Es geht um die Daten und die sind oft subjektiv wichtig <a href="uder.html">uder</a> sie gehen niemanden was an.</p>
-<p>Zwei Maßnahmen helfen, den Schaden zu begrenzen.</p>
-<ol>
-<li>
-<p><strong>Verschlüsseln</strong> des USB-Sticks. Unter Linux (genauer mit <code>LUKS</code>) geht das so: <a href="https://www.linux.com/learn/easily-encrypt-your-flash-drives-linux">grafisch</a>
-  oder mit per <a href="https://miguelmenendez.pro/en/articles/encrypt-usb-storage-device-linux-unified-key-setup-luks.html">Kommandozeile</a>. Plattformunabhängig geht
-  es z.B. mit  <a href="https://de.wikipedia.org/wiki/VeraCrypt">VeraCrypt</a>, aber das habe ich selbst noch nicht ausprobiert.</p>
-</li>
-<li>
-<p><strong>Beschriften</strong> des USB-Sticks. Um die Wahrscheinlichkeit zu erhöhen, den Stick wiederzubekommen, kann man eine Mailadresse/Telefonnummer auf dem Stick anbringen.
-  Entweder handschriftlich oder in Schriftgröße 6 ausgedruckt. Befestigen kann man das ganz geschickt mit <strong>Klebeband</strong>. Funktioniert gut.
-  Habe in bisher zwei von zwei Fällen den Stick wiederbekommen. Ein netter Nebeneffekt: Wenn man mehrere Sticks in Benutzung hat kann man sie durch passende Bezeichnung auseinander halten.</p>
-</li>
-</ol>
-<p><img src="http://cknoll.github.io/images/stick1.jpg" alt="beschrifteter USB-Stick" style="width: 400px;"/></p>
-<p>Ich bin mir ziemlich sicher, ich werde irgendwann demnächst mal wieder irgendwo einen USB-Stick vergessen. Durch Beschriftung und Verschlüsselung ist das aber halb so schlimm.</p>
+Ich gehe...
+                     
+                    <a href="http://cknoll.github.io/usb-stick-vergessen.html" rel="bookmark" title="Read more: &quot;Schadens-Reduktion bei verlorenem USB-Stick: Beschriften und Verschlüsseln&quot;"> (Artikel lesen) </a>
+                    
 
                     <div class="clear"></div>
                     <div class="info">
@@ -182,48 +112,19 @@ Der materielle Verlust ist oft das geringere Problem. Es geht um die Daten und d
 <h2 class="title">
                         <a href="http://cknoll.github.io/uder.html" rel="bookmark" title="Permanent Link to &quot;Vorschlag: "uder" ein neues deutsches Wort für "und/oder" (=einschließendes "oder")&quot;">Vorschlag: "uder" ein neues deutsches Wort für "und/oder" (=einschließendes "oder")</a>
                     </h2>
-
-                    <hr />
+                    
+                    
+                    
+                     
+                     <hr />
 <p>Die folgenden Gedanken lassen sich am prägnantesten in Form von Thesen formulieren.
 Naturgemäß wird eine subjektive Sicht der Dinge dargestellt.</p>
 <ol>
 <li>
-<p>Das deutsche Wort "oder" hat üblicherweise eine exklusive (gegenseitig ausschließende) Bedeutung. ("Willst Du Deinen Tee mit Milch oder Zitrone?"<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>). Das enstpricht einer logischen "XOR"-Verknüpfung.</p>
-</li>
-<li>
-<p>In bestimmten Situationen ist inhaltlich eine einschließende Verknüpfung gemeint. Man verwendet dann oft die Kombination "und/oder" ("Willst Du Deinen Kaffe mit Milch und/oder Zucker?").</p>
-</li>
-<li>
-<p>Um diese verbale Hilfskonstruktion zu umgehen, könnte man auch eine neue Konjunktion einführen: "uder". Diese hat per Definition die Bedeutung einer logischen "ODER"- bzw. "OR"-Verknüpfung ("Willst Du Deinen Kaffe mit Milch uder Zucker?")</p>
-</li>
-<li>
-<p>Es stellt sich die Frage: Kann man einfach so ein neues Wort einführen? Meiner Meinung nach ja. Sprache ist das was gesprochen und geschrieben wird. Sie unterliegt permanenter Veränderung. Mit jeder neuen Wörterbuchauflage (Duden etc.) fallen alte<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> Wörter heraus und neue<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> kommen hinzu. Vielleicht eines Tages "uder".</p>
-</li>
-<li>
-<p>Was spricht für die Einführung von "uder"?</p>
-<ul>
-<li>Das Anregen von Gedanken und Gesprächen über die logische Struktur der (deutschen) Sprache.</li>
-<li>Die Vergegenwärtigung der Lebendigkeit der Sprache</li>
-<li>Die Bereicherung der deutschen Sprache um eine interessante Konjunktion</li>
-</ul>
-<hr />
-</li>
-</ol>
-<p>Ich bin alles andere als ein Experte auf dem Gebiet der Linguistik.
-Die Idee zu "uder" entstand während des Schreibens von Emails. Vielleicht gibt es das schon, oder es sprechen gute Gründe dagegen, dieses Wort zu benutzen. In diesem Fall würde ich mich über eine Rückmeldung freuen. Wer mir seine Meinung zu dem Vorschlag uder konkrete Anregungen mitteilen möchte schreibt mir am besten eine <a href="http://cknoll.github.io/pages/impressum.html">Email</a>.</p>
-<hr />
-<p>Fußnoten:</p>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>Es gibt Menschen die würden auch in der Milch-Zitrone-Frage ein "uder" als völlig legitim ansehen. Aber das ist ein anderes Thema.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:2">
-<p>Nach Einschätzung der jeweiligen Redaktion.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+<p>Das deutsche Wort "oder" hat üblicherweise eine exklusive (gegenseitig ausschließende) Bedeutung. ("Willst Du Deinen Tee mit...
+                     
+                    <a href="http://cknoll.github.io/uder.html" rel="bookmark" title="Read more: &quot;Vorschlag: "uder" ein neues deutsches Wort für "und/oder" (=einschließendes "oder")&quot;"> (Artikel lesen) </a>
+                    
 
                     <div class="clear"></div>
                     <div class="info">
@@ -240,21 +141,15 @@ Die Idee zu "uder" entstand während des Schreibens von Emails. Vielleicht gibt 
 <h2 class="title">
                         <a href="http://cknoll.github.io/fsfi.html" rel="bookmark" title="Permanent Link to &quot;Gründung einer Open-Source-Initiative an der TU Dresden (Auftakt: 8.12. 18:30, WIL B321)&quot;">Gründung einer Open-Source-Initiative an der TU Dresden (Auftakt: 8.12. 18:30, WIL B321)</a>
                     </h2>
-
-                    <hr />
-<p>An der TU Dresden gibt es viele (studentische) <a href="https://www.stura.tu-dresden.de/hochschulgruppen">Hochschulgruppen</a>, aber keine die sich "hauptamtlich" mit Freier Software und Freier Information (Open Source / Open Knowledge) beschäftigt. Dabei gäbe es gerade an einer Universität für eine solche Gruppe viel Entfaltungspotenzial. Deshalb möchte ich zusammen mit anderen TU-Mitarbeiter_innen und Studierenden eine solche Gruppe gründen. Ich sehe zwei wesentliche Aktivitätsfelder einer solchen Gruppe:</p>
-<ol>
-<li>
-<p>Informations- und Lobbyarbeit. D.h.: Zusammentragen, Aufbereiten und Verbreiten von Informationen über Freie Software, Open Access, Open Data, Freie Daten-Formate etc. Über positive Beispiele und auch über die Probleme die mit den proprietären Alternativen verbunden sind. Über die Bedeutung von Sofware für moderne Wissenschaft und auch über die noch zu geringe Anerkennung von Software als wissenschaftliche Leistung (im Vergleich zu klassischen Publikationen).</p>
-</li>
-<li>
-<p>Konkretes individuelles Engagement in bestehenden oder neuen Open-Source- oder Open-Knowledge-Projekten (Entwickeln, Testen, Dokumentieren). Die Gruppe kann dazu dienen, Erfahrungen auszutauschen, Feedback zu geben und Angebot und Nachfrage von (Programmier-, Test-, etc.) Leistungen zusammenzuführen, ggf. auch unter Zuhilfenahme des Mediums Geld.</p>
-</li>
-</ol>
-<p>An einer so großen Uni wie der TUD sollte es mehr als genug Menschen (Studierende und Mitarbeiter_innen) geben, die sich für diese Themen interessieren und die dazu einen substantiellen Beitrag leisten können.</p>
-<p><strong>Update:</strong> <em>Am Mo., 8.12., 18:30 Uhr, findet im Raum <a href="https://navigator.tu-dresden.de/etplan/wil/02/raum/219302.0630">WIL B321</a> das erste Treffen in gößerer Runde zum Ideen sammeln und strukturieren statt.</em></p>
-<p>Wer nähere Informationen zu der Gruppe oder zum Auftakttreffen bekommen oder sich evtl. sogar in die Gründung einbringen möchte, kann sich gerne <a href="http://cknoll.github.io/pages/impressum.html">bei mir melden</a>. Fragen, Anregungen und Kritik nehme ich ebenfalls entgegen.</p>
-<hr />
+                    
+                    
+                    
+                     
+                     <hr />
+<p>An der TU Dresden gibt es viele (studentische) <a href="https://www.stura.tu-dresden.de/hochschulgruppen">Hochschulgruppen</a>, aber keine die sich "hauptamtlich" mit Freier Software und Freier Information (Open Source / Open Knowledge) beschäftigt. Dabei gäbe es gerade an einer...
+                     
+                    <a href="http://cknoll.github.io/fsfi.html" rel="bookmark" title="Read more: &quot;Gründung einer Open-Source-Initiative an der TU Dresden (Auftakt: 8.12. 18:30, WIL B321)&quot;"> (Artikel lesen) </a>
+                    
 
                     <div class="clear"></div>
                     <div class="info">
@@ -273,71 +168,17 @@ Die Idee zu "uder" entstand während des Schreibens von Emails. Vielleicht gibt 
 <h2 class="title">
                         <a href="http://cknoll.github.io/wikidpad.html" rel="bookmark" title="Permanent Link to &quot;WikidPad - Ein nützliches Programm zur besseren Beherrschung der Informationsflut&quot;">WikidPad - Ein nützliches Programm zur besseren Beherrschung der Informationsflut</a>
                     </h2>
-
-                    <hr />
+                    
+                    
+                    
+                     
+                     <hr />
 <h2>Update (2016-12-05)</h2>
 <p>Das im nachfolgenden Artikel beschriebene Programm <em>Wikidpad</em> habe ich 2009 kennengelernt. Damals habe ich es aus technischen Gründen dem Programm <em>Zim</em> vorgezogen.
-Die technische Entwicklung ist inzwischen aber fortgeschritten. Wenngleich ich WikidPad nach wie vor intensiv und mit Freude benutze, halte ich aus aktueller Perspektive (Ende 2016)
-zim für das bessere Desktop-Wiki. Deswegen habe ich den Lobpreistext mit neuer Überschrift und geringfügigen inhaltlichen Anpassungen als neuen Beitrag veröffentlicht:
-→ <a href="zim.html">Zim: Motivation und Beschreibung eines OpenSource Desktop-Wikis</a> </p>
-<hr />
-<p><em>Der folgende Text ist (im wesentlichen) identisch mit dem gleichnamigen Artikel
-in der <a href="http://www.fsret.de/download/barnews/BARnews_68_online.pdf">BARnews, Nr. 68</a>
-(Zeitschrift des <a href="http://www.fsret.de/">Fachschaftsrats Elektrotechnik</a>, TU Dresden).</em></p>
-<p><em>Vorteile gegenüber der Papier-/PDF-Version:</em></p>
-<ul>
-<li><a href="#links">Links</a> zum Anklicken (siehe unten)</li>
-<li>Informations-Nachtrag / Korrektur im Bedarfsfall</li>
-<li>Screencast zu Wikidpad <a href="#links">[3]</a></li>
-<li>Einfacheres Weiterempfehlen</li>
-</ul>
-<hr />
-<p>Seitdem ich es nutze, ist mir klar, dass ich es immer vermisst habe. Ein Programm, in dem man mit wenig Aufwand über die Zeit einen persönlichen Speicher für wichtige und weniger wichtige Informationen anlegen kann - und dabei a priori noch nicht wissen muss, in welche dieser Kategorien ein Informationsfragment fällt. Erstmal speichern, die Struktur ergibt sich im Lauf der Zeit (fast) von allein.</p>
-<p>Das Wiki-Prinzip bringt die bekannten Merkmale mit: Unkompliziertes Anlegen neuer Seiten, einfachste Verlinkung zwischen Einträgen, Navigationshilfen, Suche auf der aktuellen Seite oder in allen Seiten, Texthervorhebung, Einfügen von Bildern (direkt aus der Zwischenablage).</p>
-<p>Weil es ein <strong>Desktop-Wiki</strong> ist und folglich nicht im Browser oder auf einem Server lebt, hat es einige Vorteile gegenüber einem Wiki im Web: Es lässt sich fast vollständig mit Tastatur bedienen, reagiert immer schnell und flüssig, die Datenbank lässt sich unkompliziert sichern, durch einfaches Kopieren der entsprechenden Datei. Und natürlich ist man nicht von einer Internetverbindung abhängig.</p>
-<p>Insbesondere für Studierende und Doktorand_innen ist es ein ideales Tool zum Festhalten von:</p>
-<ul>
-<li>Ideen oder Fragestellungen, ggf. auch noch sehr unkonkreten</li>
-<li>Bisher unbekannte Fachbegriffen, zusammenkopierten Definitionen und Beispielen mit eigenen Ergänzungen</li>
-<li>Wichtigen Internetlinks, zusammen mit Zusatzinformationen</li>
-<li>Quellcode-Schnipsel, Konsolen-Befehle, Tipps zur Bedienung von Programmen</li>
-<li>(Zwischen-)Ergebnisse von Literaturrecherchen</li>
-<li>Organisatorischen Informationen, Gesprächsnotizen und TODO-Listen</li>
-<li>Entwürfen von Mails (ggf. mit noch unbekanntem Empfänger)</li>
-<li>Interessanten Zitaten und Quellen</li>
-<li>und allen anderen Gedankenblitzen, die momentan vielleicht gerade nicht so ultra-relevant sind, aber auf jeden Fall zu schade zum Vergessen.</li>
-</ul>
-<p>Es ist also eine Art elektronisches Notizbuch mit unendlich vielen Seiten, Querverweisen und Suchfunktion.</p>
-<p>Die für mich wichtigsten Spezial-Funktionen:</p>
-<p>Die globale Suchfunktion, wodurch man fast alles wiederfindet, wenn man auf der jeweiligen Seite die entsprechenden Schlüsselworte aufschreibt (<em>"Leitfrage: wonach würde ich nächstes Jahr suchen, wenn ich das hier wiederfinden will?"</em>).</p>
-<p>Das direkte Einfügen von Bildern aus der Zwischenablage, z.B. (partielle) Screenshots. Damit kriegt man einen relevanten Ausschnitt von GoogleBooks im Handumdrehen sinnvoll abgespeichert.</p>
-<p>Das Einfügen von LaTeX-Formeln (die man beim Kopieren von Sachen aus Wikipedia meist eh schon in der Zwischenablage hat). Dazu braucht man ein Plugin, aber das ist keine Hürde <a href="#links">[2]</a>.</p>
-<p>Wie jedes andere komplexe Programm auch, erfordert WikidPad ein bisschen Einarbeitungszeit. Einerseits, um mit dem Programm umzugehen, und die wichtigsten Tastenkombinationen zu lernen (bzw. in gewünschter Weise zu konfigurieren). Was aber länger dauert, ist, das eigene Wiki mit Inhalt zu füttern. Auch wenn das Anlegen, Suchen, Verlinken etc. von einzelnen Einträgen schnell geht, insgesamt kommt schon ein bisschen Zeit zusammen. Der Nutzen eines noch fast leeren Wikis ist zunächst eher gering, abgesehen von dem guten und befreienden Gefühl, die Gedanken, Ideen, Rechercheergebnisse etc. an einem sicheren Ort und wiederauffindbar abgelegt zu haben. Und dem Effekt das beim Aufschreiben sich manchmal eine Ideen-Kaskade ergibt.</p>
-<p>Mit der Zeit aber wird der Anteil des "Erntens" immer größer, was das weitere "Sähen" natürlich um so mehr motiviert. Vielleicht nicht mehr in der Quantität wie am Anfang aber dafür gezielter und strukturierter. Schließlich gibt es ja jetzt schon eine (dynamische) Struktur in die Neues eingebaut werden kann.</p>
-<p>Natürlich, gibt es unter der Überschrift „persönliche Informationsverwaltung“ auch noch andere Lösungen (z.B. Evernote, zim,...) mit anderen Schwerpunkten. Aber WikidPad finde ich persönlich am besten.
-Ganz nebenbei: wie viele hervorragende Programme steht es unter einer freien Lizenz und ist damit kostenlos. Außerdem ist es in Python <a href="#links">[4]</a> geschrieben und kann darin auch in Form von Plugins erweitert werden.</p>
-<p>Kurzum, für Menschen die oft und viel Informationen mit einem Computer verarbeiten, ist es ein sehr nützliches Programm, um den Überblick zu behalten oder um ihn sich erstmal zu verschaffen.</p>
-<hr />
-<h2>Nachtrag</h2>
-<p>Empfehlungen:</p>
-<ul>
-<li>Sich nach den ersten Schritten 10min Zeit nehmen um mal durch das mitgelieferte <em>HelpWiki</em>  zu blättern</li>
-<li>Für Nutzungshinweise und Anregungen den Screencast <a href="#links">[3]</a> anschauen</li>
-<li>Fragen können auch an die Mailingliste <a href="#links">[5]</a> gesendet werden.</li>
-</ul>
-<hr />
-<h2><a name="links"></a>Referenzen und Links:</h2>
-<ul>
-<li>[1] WikidPad Webseite: <a href="http://wikidpad.sourceforge.net/">http://wikidpad.sourceforge.net/</a></li>
-<li>[2] Latex-Plugin: <a href="http://wikidpad.python-hosting.com/wiki/LaTex">http://wikidpad.python-hosting.com/wiki/LaTex</a></li>
-<li>[3] Screencast (auch zum runterladen): <a href="https://vimeo.com/111451468">https://vimeo.com/111451468</a></li>
-<li>
-<p>[4] <a href="http://wwwpub.zih.tu-dresden.de/~knoll/python/material/2012_barnews_python.pdf"><em>"Plädoyer für Python"</em></a> (BAR-News Nr. 63, Zeitschrift des FSR Elektrotechnik, TU Dresden)<br></p>
-</li>
-<li>
-<p>[5] <a href="https://groups.yahoo.com/neo/groups/wikidPad/info">WikidPad Yahoo-Gruppe</a></p>
-</li>
-</ul>
+Die technische Entwicklung ist inzwischen aber fortgeschritten. Wenngleich ich...
+                     
+                    <a href="http://cknoll.github.io/wikidpad.html" rel="bookmark" title="Read more: &quot;WikidPad - Ein nützliches Programm zur besseren Beherrschung der Informationsflut&quot;"> (Artikel lesen) </a>
+                    
 
                     <div class="clear"></div>
                     <div class="info">
