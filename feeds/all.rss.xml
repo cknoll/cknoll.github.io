@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog:cknoll</title><link>http://cknoll.github.io/</link><description></description><lastBuildDate>Fri, 25 Nov 2016 21:30:00 +0100</lastBuildDate><item><title>Emails signieren und verschlüsseln</title><link>http://cknoll.github.io/emails-signieren.html</link><description>&lt;hr /&gt;
+<rss version="2.0"><channel><title>blog:cknoll</title><link>http://cknoll.github.io/</link><description></description><lastBuildDate>Wed, 22 Mar 2017 15:00:00 +0100</lastBuildDate><item><title>LED-Taschenlampen vor schleichender Selbstentladung schützen</title><link>http://cknoll.github.io/taschenlampe.html</link><description>&lt;hr /&gt;
+&lt;p&gt;LED-Taschenlampen oder -Stirnlampen sind sehr praktisch. Im Verleich zu portablen Leuchtmitteln mit Glühlampen vrebrauchen wandeln sie elektrische Leistung viel effizienter in Licht um. Dadurch erreicht man: längere Leuchtdauer, größere Helligkeit und kleinere/leichter Geräte.
+Allerdings haben (günstige) LED-Leuchtmittel oft nur einen elektronischen und keinen mechanischen Schalter. Vermutlich ist das billiger in der Herstellung, hat aber den Nachteil, dass der Stromkreis nicht vollständig unterbrochen ist.&lt;/p&gt;
+&lt;p&gt;Jedenfalls habe ich u.a. bei meiner von mir sehr wertgeschätzten LED Stirnlampe die Erfahrung gemacht, dass die Helligkeit nach ein paar Monaten der Nichtbenutzung spürbar nachgelassen hat. Ich kann mir das nur so erklären, dass auch im "ausgeschaltenen" Zustand ein schwacher Strom fließt und so die Batterien entladen werden. Das ist nervig, wenn man die Lampe nutzen will um bei offenem Fenster zu lesen ohne Scharen von Insekten anzulocken. Problematisch ist es, wenn man die Lampe in einer unvorhergesehen Problemsituation braucht (Stromausfall, Panne).&lt;/p&gt;
+&lt;p&gt;Ein einfacher Trick um dieses Problem der "Selbstentladung" zu verhindern:
+Den Stromkreis manuell unterbrechen, z.B. mit einem dünnen Stück Pappe oder Kunstsoff (siehe Foto) was man zwischen die Kontakte von einer Batterie und dem -träger klemmt.&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://cknoll.github.io/images/stirnlampe.jpg" alt="Batterieträger mit Pappe zur Kontaktunterbrechung"/&gt;&lt;/p&gt;
+&lt;p&gt;Man muss dann nur daran denken,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;den "Unterbrecher" zu entfernen wenn man die Lampe braucht (was ggf. weit in der Zukunft liegt) und&lt;/li&gt;
+&lt;li&gt;den "Unterbrecher" nach Benutzung wieder einzusetzen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Eigentlich trivial, aber viele Probleme haben Trivialitäten als Ursache.)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Wed, 22 Mar 2017 15:00:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2017-03-22:taschenlampe.html</guid><category>Tipp</category></item><item><title>Emails signieren und verschlüsseln</title><link>http://cknoll.github.io/emails-signieren.html</link><description>&lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;Zusammenfassung:&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;Emailsignaturen: Ein Anhang "signature.asc" kann durch geschickte Anwendung kryptografischer Verfahren die Echtheit einer Email bezeugen (richtiger Absender, unveränderter Inhalt).&lt;/p&gt;
 &lt;hr /&gt;
