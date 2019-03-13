@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>blog:cknoll</title><link>http://cknoll.github.io/</link><description></description><lastBuildDate>Mon, 23 Apr 2018 16:00:00 +0200</lastBuildDate><item><title>Material zum Vortrag "Die Grenzen des Wachstums"</title><link>http://cknoll.github.io/wachstum.html</link><description>&lt;hr /&gt;
+<rss version="2.0"><channel><title>blog:cknoll</title><link>http://cknoll.github.io/</link><description></description><lastBuildDate>Wed, 13 Mar 2019 22:00:00 +0100</lastBuildDate><item><title>Problem der Plakatbefestigung</title><link>http://cknoll.github.io/plakatfixture.html</link><description>&lt;hr /&gt;
+&lt;p&gt;Es wird sehr viel plakatiert: Für Ringvorlesungen genau so wie für Partys oder Wahlen.
+Typischerweise werden Plakatpappen mit Einweg-Kabelbindern an Laternenmasten befestigt.
+Das bedeutet eine ganze Menge Plastik-Müll.&lt;/p&gt;
+&lt;p&gt;XXXX&lt;/p&gt;
+&lt;p&gt;Die Frage ist, ob man nicht durch einen geschickten Knoten und ggf. unter Nutzung eines
+Hilfsobjektes (Stab, Keil, ...) ohne bzw. mit weniger Plastikmüll auskommen kann.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Schematische Darstellung des Besfestigungsproblems" src="../images/knot-problem.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Es läuft darauf hinaus, Objekt P kraftschlüssig mit Objekt M zu verbinden,
+durch geeignete Verbindung des Seilendes A mit dem Seilabschnitt B,
+wobei das Seil dort auch zernschnitten werden kann.
+Idealerweise wird die &lt;a href="https://de.wikipedia.org/wiki/Sperrklinke"&gt;Rücklaufsperr-Eigenschaft&lt;/a&gt;
+von Kabelbindern reproduziert - d.h., dass das Straffziehen ("Dichtholen") des Knotens mit einer
+Erhöhung der Seilspannung einhergeht.&lt;/p&gt;
+&lt;p&gt;Offenbar gibt es &lt;a href="https://de.wikipedia.org/wiki/Liste_von_Knoten"&gt;sehr viele Knoten&lt;/a&gt;
+mit unterschiedlichen Eigenschaften.
+Ob davon aber eine für das Problem geeignet ist, ist mir aktuell unklar.
+Über Hinweise &lt;a href="/pages/impressum.html"&gt;per Mail&lt;/a&gt;, die zur Lösung des Problems beitragen, würde ich mich freuen.&lt;/p&gt;
+&lt;p&gt;Falls sich eine praktikable Lösung findet, wird sie in diesm Blog veröffentlich.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Carsten Knoll</dc:creator><pubDate>Wed, 13 Mar 2019 22:00:00 +0100</pubDate><guid isPermaLink="false">tag:cknoll.github.io,2019-03-13:plakatfixture.html</guid><category>Nachhaltigkeit</category><category>Praxisproblem</category></item><item><title>Material zum Vortrag "Die Grenzen des Wachstums"</title><link>http://cknoll.github.io/wachstum.html</link><description>&lt;hr /&gt;
 &lt;p&gt;Dieser Blog-Post dient zur Verlinkung des Materials zum Vortrag &lt;em&gt;&lt;a href="https://tuuwi.de/vorlesungenseminare/umweltbewegungen/"&gt;"Die Grenzen des Wachstums - Nachhaltigkeit aus systemdynamischer Perspektive"&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Dieses besteht aus&lt;/p&gt;
 &lt;p&gt;XXXX&lt;/p&gt;
