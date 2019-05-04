@@ -1,0 +1,1939 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/custom.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/monokai.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%                                          %%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%              Beginn Folien               %%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%                                          %%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown>
+<textarea data-template>
+# Was ist Wissen?
+## Und wenn ja, warum?
+
+<br>
+
+Versuch einer Begriffsbestimmung im Spannungsfeld zwischen
+**Erkenntnistheorie** und **Expertensystemen**
+
+</textarea>
+</section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown>
+<textarea data-template>
+# Wer spricht?
+
+Carsten Knoll,
+<ul>
+<li>Post-Doc <br>@ Institut für Regelungs- und Steuerungstheorie</li>
+<div class="fragment fade-down">
+<li>
+Mitglied <a href="https://tuuwi.de">TUUWI</a> (TU-Umweltinitiative)
+</li>
+<li>
+Gründungsmitglied (<a href="https://fsfw-dresden.de">FSFW</a>)<br>
+Hochschulgruppe Freie &nbsp; &nbsp;Software und Freies <div class="fragment nested_grow grow">Wissen</div>
+</li>
+</div>
+<div class="fragment fade-down">
+<li>
+    (Forschungs-) Interessen:
+    <ul>
+    <li>Maschinelles Lernen</li>
+    <li>Assistenz-Systeme</li>
+    </ul>
+</li>
+</div>
+</ul>
+</textarea>
+</section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%            Gliederung (1)                %%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown>
+<textarea data-template>
+# Gliederung
+
+- Vorstellung <div class="fragment ilb fade-down">✓</div>
+- <div class="fragment highlight-bluez" >Formale Definition </div>
+- Philosophische Sichtweisen (bis 20. Jh.)
+- MINT-Perspektive
+- Wissen im 21. Jh.
+- Digitale Represenation von Wissen
+- Zusammenfassung
+
+</textarea>
+</section>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%          Eingrenzung (Expl./Impl)        %%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section>
+<h2><span style="font-style: italic;">Wissen</span> (Eingrenzung):</h2>
+<br>
+<br>
+<div class="left_c">
+Implizites Wissen<span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/Implizites_Wissen">REF</a>]</span>
+
+
+<ul>
+<li>  Können / „Know How“   </li>
+<li>  Man weiß nicht, <br>dass man es weiß</li>
+<li>  Bsp: Laufen   </li>
+</ul>
+</div>
+
+
+<div class="right_c">
+<div class="fragment" data-fragment-index="2">
+<div class="fragment grow" data-fragment-index="3">Explizites Wissen<span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/Explizites_Wissen">REF</a>]</span>
+</div>
+
+
+<ul>
+<li>  mittels Zeichen (Sprache, ...) kommunizierbar           </li>
+<li>  Bsp: Faktenwissen           </li>
+<li>  Auch <span style="font-style: italic;">„propositionales“</span> Wissen<span class="mysuperh1">[<a href="#Prit2006" title="Duncan Pritchard: *What is this thing called Knowledge?*, Routledge 2006; SLUB">REF</a>]</span>           </li>
+</ul>
+</div>
+
+<br>
+<br>
+<div class="fragment fade-left" data-fragment-index="3">
+ ↑ Im Vortrag betrachtet: ↑
+</div>
+
+</div>
+
+
+</section>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%          Formale Definition              %%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section data-markdown><textarea data-template>
+## *Wissen* (Definition) <span class="mysuperh1">[[REF](https://de.wikipedia.org/wiki/Wissen)]</span>:
+
+<div class="left_full">
+<br>
+<br>
+
+<br>
+Platon*:
+<span class="myquote">
+&ldquo;Wahre und gerechtfertigte Überzeugung&rdquo;
+</span>
+
+<br>
+<br>
+<p>Unterscheidet sich von:</p> <!-- .element: class="fragment fade-down" -->
+
+ - Falscher Auffassung <!-- .element: class="fragment fade-down" -->
+ - Unbekannter Wahrheit <!-- .element: class="fragment fade-down" -->
+ - Wahrer aber ungerechtfertigter Überzeugung <!-- .element: class="fragment fade-down" -->
+
+</div>
+</textarea></section>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section>
+          <div data-svg-fragment="images/wahrheit_mengendiagramm2.svg#[*|label=L1]">
+            <a class="fragment" title="[*|label=L2]"></a>
+            <a class="fragment" title="[*|label=L3]"></a>
+          </div>
+
+          <div class="fragment"><div class="fragment grow" style="display:inline-block;">Rechtfertigung</div></div>
+</section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%    Gettier-Problem           %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown>
+<textarea data-template>
+## Gettier-Problem<span class="mysuperh1">[[REF](https://de.wikipedia.org/wiki/Gettier-Problem)]</span>:<br>Was gilt als „Rechtfertigung“??
+
+<div class="left_full">
+
+<ul>
+<div class="fragment fade-down">
+<li>Edmund Gettier:  <span style="font-style: italic;">Is Justified True Belief Knowledge?</span>, 1963 (3 S.)</li>
+</div>
+<div class="fragment fade-down">
+<li> Beispiel: Wie spät ist es?
+<ul>
+<li>Blick auf die Uhr</li>
+<li>Uhr könnte kaputt sein, <br>und trotzdem <span class="italic">zufällig</span> richtige Zeit anzeigen</li>
+</ul>
+</li>
+</div>
+<div class="fragment">
+<li>
+⇒ Rechtfertigung basiert auf <div class="fragment grow nested_grow">Vorannahmen</div>
+<br>
+</li>
+</div>
+<div class="fragment fade-up bigger">
+<li>
+⇒ Erkenntnistheorie ist nicht trivial
+</li>
+</div>
+
+</ul>
+
+</div> <!-- end of div-left-full -->
+
+</textarea>
+</section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%            Gliederung (2)                %%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown>
+<textarea data-template>
+# Gliederung
+
+- Vorstellung ✓
+- Formale Definition <div class="fragment ilb fade-down">✓</div>
+- <div class="fragment highlight-bluez" >Philosophische Sichtweisen (bis 20. Jh.)</div>
+- MINT-Perspektive
+- Wissen im 21. Jh.
+- Digitale Represenation von Wissen
+- Zusammenfassung
+
+
+</textarea>
+</section>
+
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%      Erkenntnistheorie / Epistemologie    %%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Erkenntnistheorie <div class="fragment fade-down ilb" data-fragment-index="2">/ Epistemologie</div>
+<div class="left_full">
+
+<ul>
+<div class="fragment" data-fragment-index="2">
+  <li>Ein Hauptgebiet der Philosophie</li>
+</div>
+<div class="fragment" data-fragment-index="3">
+4 Fragen von Imannuel Kant <span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/Immanuel_Kant">REF</a>]</span>
+<!-- https://de.wikipedia.org/wiki/Immanuel_Kant -->
+(1724 - 1804)</div>
+<div class="fragment" data-fragment-index="3">
+<ul>
+<li><div class="fragment grow nested_grow">Was kann ich wissen?</div></li>
+<li><div class="nested_grow">Was soll ich tun?</div></li>
+<li><div class="nested_grow">Was darf ich hoffen?</div></li>
+<li><div class="nested_grow">→ Was ist der Mensch?</div></li>
+</ul>
+</div>
+
+
+<!-- <img src="images/250px-Kant_gemaelde_1.jpg" class="fragment" style="margin-left: 2em;" data-fragment-index="3"> -->
+
+<img src="images/250px-Kant_gemaelde_1.jpg" class="fragment"  style="margin-left: 1em; position:absolute; top: 100px; right:0px" data-fragment-index="3">
+
+</ul>
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%      Epistemologische Strömungen 1      %%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section data-markdown><textarea data-template>
+## Epistemologische Strömungen (1):
+<div class="left_full">
+<ul>
+<div class="fragment">
+<li>
+Rationalismus/Idealismus
+<ul>
+<li>Vernunft bzw. Nachdenken als Ursprung der Erkenntnisse</li>
+<li>Anzweifeln der Realität</li>
+<li>Gewiss ist nur die eigene Existenz</li>
+<li>Sinneswahrnehmungen sind unzuverlässig</li>
+<li>Vertreter: Z.B. René Descartes (1596-1650): <span class="myquote"> „Cogito ergo sum“</span></li>
+</ul>
+</li>
+</div>
+<li class="fragment">
+Empirimus
+<ul><!-- Liste 2 -->
+<li> Erkenntnisse aus nur aus Sinneswahrnehmung</li>
+<li>Vertreter: Z.B. John Locke (1632-1704)</li>
+<li>Vernachlässigt die Bildung allgemeiner Theorien</li>
+<li class="fragment">
+Gravitationsgesetz als Gegenbeispiel
+</li>
+</ul><!-- Liste 2 -->
+</li>
+</ul>
+
+</div> <!-- end of div-left-full -->
+</textarea>
+</section>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%      Optische Täuschung       %%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section data-markdown><textarea data-template>
+## Zweifelhafte Sinneswahrnehmungen<span class="mysuperh1">[<a href="https://www.illustrator-tutorials.de/2016/05/09/optische-taeuschungen-mit-adobe-illustrator-erstellen/">REF</a>]</span>:
+<br>
+<img src="images/optische_taeuschung.png"  >
+</textarea></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%      Positivismus      %%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section data-markdown><textarea data-template>
+## Positivismus/Empiriokritizismus:
+<div class="left_full">
+
+<ul>
+<div class="fragment">
+<li>Weiterentwicklung des Empirismus</li>
+<li>Vertreter: Z.B. Auguste Comte (1798–1857), Ernst Mach (1838-1916)</li>
+</div>
+<div class="fragment">
+<li>Problem: <br>
+Sinneswahrnehmungen lassen verschiedene Interpretationen zu</li>
+</div>
+<div class="fragment">
+<li>Lösungsansatz: Denkökonomie/Sparsamkeitsprinzip</li>
+<li>Plausibel ist die Theorie, welche die Daten mit dem geringsten Aufwand erklären kann
+</div>
+<br>
+<div class="fragment">
+→ Ockhams Rasiermesser / Occams Razor <span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/Ockhams_Rasiermesser">REF</a>]</span>
+<span class="small">(Wilhelm von Ockham (1288–1347)</span>
+<br>
+<br>
+</div>
+</li>
+<div class="fragment">
+<li>Kritik: <br>
+<span class="italic">Verifikation</span> ist unmöglich; stattdessen: <span class="italic">Falsifikation</span>!</li>
+</div>
+</ul>
+
+</div> <!-- end of div-left-full -->
+</textarea>
+</section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%      Kostruktivismus      %%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section data-markdown><textarea data-template>
+## Konstruktivismus:
+<div class="left_full">
+
+<ul>
+<div class="fragment">
+<li>Mehrere Strömungen mit dieser Bezeichnung</li>
+</div>
+<div class="fragment">
+<li>Kernthesen:
+
+<ul>
+<li>Erkenntnis wird im Kopf individuell <span class="italic">konstruiert</span></li>
+<li>Maßgeblicher Einfluss durch Situation, Kultur und Geschichte</li>
+<li>→Unterschiedliche Gesellschaften konstruieren sich unterschiedliche Wirklichkeiten<span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/Die_gesellschaftliche_Konstruktion_der_Wirklichkeit">REF</a>]</span>
+</li>
+</ul>
+
+</li>
+</div>
+<div class="fragment">
+<li>Besonders relevant in Sozialwissenschaften</li>
+</div>
+<div class="fragment">
+<li>Vertreter: <br>Z.B. Peter Berger (1929-2017), Thomas Luckmann (1927-2016)</li>
+</div>
+</ul>
+
+
+</div> <!-- end of div-left-full -->
+</textarea>
+</section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%      Kritischer Rationalismus       %%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Kritischer Rationalismus<span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/Kritischer_Rationalismus">REF</a>]</span>:
+<div class="left_full">
+<ul>
+<div class="fragment" data-fragment-index="2">
+<li>Begründer Karl Popper (1902-1994)</li>
+</div>
+<div class="fragment">
+<li>
+Grundannahmen:
+<ul>
+<li> Es gibt die Realität</li>
+<li> Menschliche Wahrnehmungsfähigkeit ist begrenzt</li>
+<li> Jede Behauptung könnte auch falsch sein (Fallibilismus)</li>
+</ul>
+</li>
+</div>
+<div class="fragment">
+<li>
+Synthese aus Rationalismus und Empirismus<span class="mysuperh1">[<a href="https://wirtschaftslexikon.gabler.de/definition/intellektualismus-41818/version-265177">REF</a>]</span>
+</li>
+</div>
+<div class="fragment">
+<li>
+<div style="display:inline;">Methode<span class="mysuperh1">[<a href="https://wirtschaftslexikon.gabler.de/definition/kritischer-rationalismus-39199/version-262614:">REF</a>]</span>:
+<div class="myquote ilb" style="max-width:700px;vertical-align: middle;margin-left:10px;">
+Kritische Überprüfung von Hypothesen mit dem Ziel ihrer vorläufigen Bestätigung durch den permanenten vergeblichen Versuch ihrer Widerlegung
+</div>
+</div>
+</li>
+</div><!-- End of fragment -->
+<div class="fragment fade-down">
+<li>
+Kritik:
+<ul>
+<li> Fallibilismus widerspräche sich selbst</li>
+<li> K. R. nicht auf sich selbst anwendbar <span class="small">(„selbstreferenzaversiv gebaut“)</span></li>
+</ul>
+</li>
+</div>
+</ul>
+<img src="images/330px-Karl_Popper.jpg" class="fragment" width="150px" style="margin-left: 1em; position:absolute; top: 50px; right:-100px" data-fragment-index="2">
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%       Lösungsvoschläge zum Gettier-Problem      %%%%%%%%%%%% -->
+
+<section data-markdown><textarea data-template>
+## Vorgeschlagene Lösungen zum Gettier-Problem:
+<div class="left_full">
+
+<ul>
+<div class="fragment">
+<li>
+Begriffsdefinition von „Wissen“ ist
+<div class="fragment grow nested_grow">unmöglich</div> und <div class="fragment grow nested_grow">unnötig</div>
+</li>
+</div>
+<div class="fragment">
+<li>
+„Wissen“ nicht mit anderen Begriffen erklären, <br>
+sondern andere Begriffe mit „Wissen“
+</li>
+</div>
+<div class="fragment">
+<li>
+Eine gemeinsame Basis von <b>Grundannahmen</b> voraussetzen
+<br>
+<div class="fragment"> ... und regelmäßige gegenseitig Plausibilität prüfen
+</div>
+<br>
+</li>
+</div>
+<div class="fragment">
+<li>
+→ Rückversichernde rhetorische Frage:<br>
+ „Nicht wahr?“ „Gel?“ „Nor?“ „Wa?“ „Isn't it?“ „..., ¿no?“
+</li>
+</div>
+<div class="fragment">
+<li>
+Niedrigschwellige Möglichkeit, um Widerspruch zu äußern
+</li>
+<br>
+<br>
+</div>
+
+<div class="fragment fade-down">
+<li>
+Konzept: <div class="bigger ilb">Diskurswahrheit
+</div>
+</li>
+</div>
+
+</ul>
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%      Diskurswahrheit     %%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+<section data-markdown><textarea data-template>
+## Konsensustheorie der Wahrheit<span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/J%C3%BCrgen_Habermas#Konsensustheorie_der_Wahrheit">REF</a>]</span>
+<div class="left_full">
+
+
+<ul>
+<div class="fragment" data-fragment-index="2">
+<li>
+Von Jürgen Habermas, 1973
+</li>
+</div>
+<div class="fragment"><span class="italic">
+<li>
+Wahrheit</span>:
+<div class="myquote" style="max-width:800px;">„ein Geltungsanspruch, den wir mit Aussagen verbinden, indem wir sie behaupten“</div>
+</li>
+</div>
+<div class="fragment">
+<li>
+Für Wahrheitsanspruch ist nicht empirische Evidenz entscheidend,
+<br>
+sondern Argumentationen innerhalb eines Diskurses
+</li>
+</div>
+<div class="fragment">
+<li>
+<div class="myquote ilb" style="max-width:800px;">„zwangloser Zwang des besseren Argumentes“</div>
+(TdkH, 1981)<span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/Theorie_des_kommunikativen_Handelns">REF</a>]</span>
+</li>
+</div>
+
+</ul>
+
+
+
+<img src="images/220px-JuergenHabermas_retouched.jpg" class="fragment" width="150px" style="margin-left: 1em; position:absolute; top: 50px; right:-100px" data-fragment-index="2">
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Zwischenfazit  1     %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Zwischenfazit (1):
+<div class="left_full">
+Bisherige Positionen:
+</div>
+<br>
+<div class="fragment ilb">
+<img src="images/250px-Kant_gemaelde_1.jpg" height=200px class="fragment1" >
+<img src="images/330px-Karl_Popper.jpg" height=200px class="fragment1">
+<img src="images/220px-JuergenHabermas_retouched.jpg" height=200px class="fragment1">
+...</div>
+
+<div class="left_full">
+<ul>
+
+<li class="fragment">(Alte) Männer aus Mitteleuropa
+</li>
+<li class="fragment">Pluspunkt für Konstruktivismus
+</li>
+
+</ul>
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Zwischenfazit (2)      %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Zwischenfazit (2):
+
+<div class="left_full">
+<ul>
+
+<li class="fragment"> ∃ Vielfalt an unterschiedlichen Theorien
+</li>
+<li class="fragment">→ Verwirrungspotential<br>
+</li>
+
+<li class="fragment"> Empfehlenswert: Kritisches Hinterfragen vermeintlicher Gewissheiten
+</li>
+<li class="fragment"> Radikaler Skeptizismus erschwert Interaktion und Kooperation
+<br> → Potentiell: Isolation
+</li>
+</ul>
+
+<div style="position:absolute; top:280px; right:200px;">
+<img src="images/dont_belive_in_linear_time.jpg" class="fragment" style="height=100px;">
+</div>
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%            Karrikatur 1776                %%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-background="images/dont_belive_in_linear_time.jpg" data-background-size="contain">
+</section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown>
+<textarea data-template>
+# Gliederung
+
+- Vorstellung ✓
+- Formale Definition (Versuch) ✓
+- Philosophische Sichtweisen (bis 20. Jh.) <div class="fragment ilb fade-down">✓</div>
+- <div class="fragment highlight-bluez" >MINT-Perspektive</div>
+- Wissen im 21. Jh.
+- Digitale Represenation von Wissen
+- Zusammenfassung
+
+</textarea>
+</section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%       Mathematische Beweise (1)   %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section>
+<h2>Mathematische Sätze und Beweise</h2>
+<div class="left_full">
+
+<div class="fragment" data-fragment-index="3">
+Beispiel: Satz des Pythagoras* (6. Jh. v. Chr.):
+</div>
+<div class="myquote fragment" data-fragment-index="4">
+„In jedem rechtwinkligen Dreieck ist die Summe der Kathetenquadrate gleich dem Hypothenusenquadrat.“
+</div>
+
+
+<div class="fragment" data-fragment-index="2">
+$$ a^2 + b^2 = c^2 $$
+</div>
+
+
+</div> <!-- end of div-left-full -->
+
+
+<div data-svg-fragment="images/pythagoras1.svg#[*|label=A0]">
+<a class="fragment" title="[*|label=A1]"></a>
+<a class="fragment" title="[*|label=A2]"></a>
+<!-- <a class="fragment" title="[*|label=L3]"></a> -->
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%    1. Beweis d. Satzes v. P (2)   %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section data-background="images/pythagoras_simpleclub/pythagoras_simple_club_10.png" data-background-size="contain" data-transition="fade" data-background-transition="fade"><h2>Beweiß des Satzes von Pythagoras</h2></section>
+<section data-background="images/pythagoras_simpleclub/pythagoras_simple_club_11.png" data-background-size="contain" data-transition="fade" data-background-transition="fade"><h2>Beweiß des Satzes von Pythagoras</h2></section>
+<section data-background="images/pythagoras_simpleclub/pythagoras_simple_club_12.png" data-background-size="contain" data-transition="fade" data-background-transition="fade"><h2>Beweiß des Satzes von Pythagoras</h2></section>
+<section data-background="images/pythagoras_simpleclub/pythagoras_simple_club_13.png" data-background-size="contain" data-transition="fade" data-background-transition="fade"><h2>Beweiß des Satzes von Pythagoras</h2></section>
+<section data-background="images/pythagoras_simpleclub/pythagoras_simple_club_14.png" data-background-size="contain" data-transition="fade" data-background-transition="fade"><h2>Beweiß des Satzes von Pythagoras</h2></section>
+<section data-background="images/pythagoras_simpleclub/pythagoras_simple_club_15.png" data-background-size="contain" data-transition="fade" data-background-transition="fade"><h2>Beweiß des Satzes von Pythagoras</h2></section>
+
+
+<section data-background="images/pythagoras_simpleclub/pythagoras_simple_club_16.png" data-background-size="contain" data-transition="fade" data-background-transition="fade"><h2>Beweiß des Satzes von Pythagoras</h2>
+<div class="left_full">
+<div class="fragment fade-up">
+<span class="small" style="background: rgba(0, 0, 0, 0.7);">Alle diese Bilder sind Screenshots von:
+    <a href="https://www.youtube.com/watch?v=76tNP31_CQk">(Mathe - simpleclub)</a></span>
+</div>
+
+<div class="fragment fade-up" style="height:700px; background: rgba(20, 20, 20, 0.9);">
+<div class="left_fullp">
+<br>
+<br>
+<br>
+<span class="bigger">Feststellung:</span>
+<br>
+Der Beweis überzeugt nur
+<ul>
+<div class="fragment fade-left">
+<li> wenn Flächeninhaltsformel des Dreiecks und
+</li>
+</div>
+<div class="fragment fade-left">
+<li> binomische Formeln bekannt sind.
+</li>
+</div>
+
+
+</ul>
+
+</div>
+</div>
+<!--    fade up -->
+</div>
+
+</section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%       Mathematische Beweise  (3)  %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section>
+<h2>Einfacherer Beweiß des Satzes von Pythagoras</h2>
+<div class="left_full">
+
+
+<div data-svg-fragment="images/pythagoras2.svg#[*|label=A0]">
+<a  title="[*|label=A1]"></a>
+<a title="[*|label=A2]"></a>
+<a class="fragment" title="[*|label=A3]"></a>
+<a class="fragment" title="[*|label=A3b]"></a>
+<a class="fragment" title="[*|label=A3c]"></a>
+<a class="fragment" title="[*|label=A4]"></a>
+<a class="fragment" title="[*|label=A5]"></a>
+<a class="fragment" title="[*|label=A6]"></a>
+<a class="fragment" title="[*|label=A7]"></a>
+<a class="fragment" title="[*|label=A8]"></a>
+<a class="fragment" title="[*|label=A9]"></a>
+<a class="fragment" title="[*|label=A10]"></a>
+<a class="fragment" title="[*|label=A11]"></a>
+<a class="fragment" title="[*|label=A12]"></a>
+<a class="fragment" title="[*|label=A13]"></a>
+
+</div>
+
+
+</div> <!-- left -->
+</section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%       Mathematische Beweise  (4)  %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section>
+<h2>Mathematische Sätze und Beweise - Fazit</h2>
+<div class="left_full">
+
+<br>
+Mit mathematischer Beweis-Methode kann man ziemlich sicher sein,<br>
+dass die Behauptung stimmt.
+
+<br>
+<br>
+<div class="fragment">
+<span class="bigger">Aber:</span>
+
+<ul>
+<li>Anwendung nicht trivial</li>
+<li class="fragment">Lebensnähe nicht immer gegeben
+<br>
+
+<div class="myquote">
+„In reflexiven Vektorräumen ist die Einheitskugel schwachkompakt.“
+</div>
+
+</li>
+
+
+<li class="fragment">Ob ein Beweis „durchgeht“ entscheiden immer noch Menschen</li>
+</ul>
+</div>
+
+
+</div> <!-- left -->
+
+</section>
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%      Modelle als spezielles Wissen   %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section data-markdown><textarea data-template>
+<h2>Modelle als spezielle Art des Wissen </h2>
+<div class="left_full">
+    <br><br><br>
+<ul>
+<li class="fragment">
+In Natur- und Ingenieurwissenschaften: <br>Approximation des jeweils relevanten Teils der Realität durch Modelle
+</li>
+<li class="fragment">
+Faustregel: so exakt wie nötig, so einfach wie möglich
+</li>
+</ul>
+</div>
+</textarea>
+</section>
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%      Gültigkeit von Modellen     %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%      Was ist ein Modell          %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section data-markdown><textarea data-template>
+## Was ist ein (mathematisches) Modell?
+<div class="left_full">
+
+<ul>
+<div class="fragment" data-fragment-index="2"> vereinfachtes Abbild der Wirklichkeit (=Modell<span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/Modell">REF</a>]</span>)
+</div>
+<div class="fragment" data-fragment-index="3">mittels mathematischer Notation beschrieben<br>
+Bsp: <div class="ilb fragment fade-down" data-fragment-index="3"><span class="small">(Differentialgleichung eines idealen Pendels)</span>
+</div>
+$$\ddot \varphi = -\frac{g}{l}\sin(\varphi)$$
+</div>
+<div class="fragment" data-fragment-index="4">Vereinfachung:
+$$\sin(\varphi) \approx \varphi \qquad \mathrm{für~} |\varphi| \approx 0$$
+</div>
+<div class="fragment" data-fragment-index="7">
+$$\Rightarrow \ddot \varphi \approx - \frac{g}{l} \varphi $$
+</div>
+</ul>
+
+<div class="fragment fade-down" data-fragment-index="3" style="position:absolute; top:230px; right:-30px;">
+<img src="images/pendel.svg" style="transform: scale(1.0);" ><br>
+</div>
+
+
+<div class="fragment fade-down" data-fragment-index="5" style="position:absolute; top:150px; right:-230px;">
+<img src="images/lin_sin_1.svg" style="transform: scale(0.6);" ><br>
+</div>
+
+<div class="fragment fade" data-fragment-index="6" style="position:absolute; top:150px; right:-230px;">
+<img src="images/lin_sin_2.svg" style="transform: scale(0.6);" ><br>
+</div>
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%        Was kann ein Modell       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+<span style="transform: scale(0.5);"><h2>Was *kann* ein (mathem.) Modell?</h2></span>
+<div class="left_full">
+
+$$\ddot \varphi = - \frac{g}{l} \varphi $$
+
+<div class="fragment bigger" data-fragment-index="2"> Bestimmte Fragen beantworten:
+</div>
+
+<ul>
+<li class="fragment" data-fragment-index="3">
+Wie verhält sich $\varphi(t)$, d.h. Winkel in Abhängigkeit von der Zeit?
+<div class="fragment fade-right" data-fragment-index="4">
+$$\rightarrow \qquad \varphi(t) = \varphi_0\cdot\cos\left(\sqrt{\frac{g}{l}}\cdot t\right) $$
+</div>
+</li>
+<li class="fragment">
+Hängt die Periodendauer von der Anfangsauslenkung $\varphi_0$ ab?
+<div class="fragment fade-right">
+$$\rightarrow \mathrm{nein}$$
+</div>
+<div class="fragment fade-right">
+... sagt das Modell
+</div>
+</li>
+</ul>
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%      Was kann ein Modell nicht   %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section data-markdown><textarea data-template>
+<span style="transform: scale(0.5);"><h2>Was kann ein (mathem.) Modell *nicht*?</h2></span>
+<div class="left_full">
+
+$$\ddot \varphi = \frac{g}{l} \varphi $$
+
+<div class="fragment" data-fragment-index="2"> Valide Aussagen treffen außerhalb seines
+<div class="ilb fragment grow nested_growl" data-fragment-index="2">Gültigkeitsbereiches</div>
+</div>
+
+<ul>
+<li class="fragment" data-fragment-index="3">
+Was passiert bei großen Winkeln?
+</li>
+
+
+<li class="fragment" data-fragment-index="4">
+Was ist mit Reibung?
+<div class="ilb fragment" data-fragment-index="5">
+Was passiert bei externer Störung?
+<br>
+</div>
+<p></p>
+</li>
+
+
+<li class="fragment" data-fragment-index="6">
+<div class="bigger">Einschätzung der Modellgültigkeit erfordert</div>
+</li>
+
+<li class="fragment" data-fragment-index="6">Erinnerung an <span class="italic">explizite</span>
+Modellannahmen: $\sin(\varphi) \approx \varphi \enspace \mathrm{für~} |\varphi| \approx 0 $
+</li>
+
+<li class="fragment" data-fragment-index="6">Hinterfragen <span class="italic">impliziter</span>
+Modellannahmen (Reibung vernachlässigt)
+</li>
+</ul>
+
+<br>
+<div class="fragment fade-down" data-fragment-index="7" style="text-align:center">
+<div class="fragment grow bigger" data-fragment-index="7">
+→ Urteilskraft
+</div>
+</div>
+
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%            Gliederung (4)                %%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown>
+<textarea data-template>
+# Gliederung
+
+- Vorstellung ✓
+- Formale Definition (Versuch) ✓
+- Philosophische Sichtweisen (bis 20. Jh.) ✓
+- MINT-Perspektive <div class="fragment ilb fade-down">✓</div>
+- <div class="fragment highlight-bluez" >Wissen im 21. Jh. </div>
+- Digitale Represenation von Wissen
+- Zusammenfassung
+
+</textarea>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%            Denken ist wie googeln        %%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section data-background="images/denken_ist_wie_googlen_krasser.jpg" data-background-size="contain" data-background-transition="slide">
+
+<div style="position:absolute; bottom:-680px;">
+<span class="tiny" style="background: rgba(0, 0, 0, 0.5);">Bildquelle: https://www.redbubble.com/de/people/weetee/works/34595346-denken-ist-wie-googeln-nur-krasser?p=iphone-case</span>
+</div>
+</section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%     Digitalisierung und Nachhaltigkeit  (1)     %%%%%%%%%%%%%%%%%%%% -->
+
+<section data-transition="fade">
+<h2>Zentrale  Herausforderungen <br>des 21. Jahrhunderts:</h2>
+<br>
+<div class="left_c">
+<span class="bigger">Digitalisierung</span>
+<br>
+<br>
+
+<div class="fragment fade-right">
+
+<ul>
+<li>  Disruptive Auswirkungen digitaler Technik <br>
+auf Leben und Arbeiten
+</li>
+<li class="myquote">  „Veränderung war noch nie so schnell wie heute und wird nie wieder so langsam sein wie heute“<span class="mysuperh1">[<a href="https://www.deutschlandfunk.de/digitalisierung-im-arbeitsleben-mit-ki-den-persoenlichen.769.de.html?dram:article_id=445403">REF</a>]</span></li>
+
+
+<li><span class="small">Autonome KFZ, Online-Handel, Social Scoring, Massenüberwachung, Wahlmanipulation, ...</span></li>
+</ul>
+</div>
+
+</div>
+<!-- left column -->
+
+
+<div class="right_c">
+<span class="bigger">Nachhaltigkeit</span>
+<br>
+<br>
+
+<div class="fragment fade-left">
+<ul>
+<li class="myquote">  Bedürfnisse der aktuellen Generation so befriedigen,
+dass zukünftige Generationen die Möglichkeit haben, ihre Bedürfnisse zu befriedigen
+<span class="mysuperh1">[<a href="https://www.bpb.de/izpb/8983/leitbild-der-nachhaltigen-entwicklung">REF</a>]</span></li>
+
+<li><span class="small">Ressourcenknappheit, Multiresistente Keime, Verschmutzung, Klimawandel, ...</span></li>
+
+</ul>
+</div> <!-- fragment -->
+
+
+
+</div> <!-- right column -->
+</section>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%     Digitalisierung und Nachhaltigkeit  (2)     %%%%%%%%%%%%%%%%%%%% -->
+
+
+
+
+<section data-transition="fade">
+<h2>Zentrale  Herausforderungen <br>des 21. Jahrhunderts:</h2>
+<br>
+<div class="left_full">
+<span class="bigger">Digitalisierung</span>
+<span class="bigger" style="padding-left:260px;">Nachhaltigkeit</span>
+<br>
+<br>
+
+Beide Themen ...
+<ul>
+<li> hängen stark mit „Wissen“ zusammen</li>
+<div class="fragment fade-left">
+<li>sind stark umstritten.</li>
+<div class="fragment fade-left">
+<li>hängen mit der Verteilung von Geld und Macht zusammen.</li>
+</div>
+</div>
+</ul>
+
+</div> <!--left_full-->
+</section>
+
+
+
+<section data-background="images/protest_artikel13.jpg" data-background-size="contain" data-background-transition="slide">
+</section>
+
+<section data-background="images/protest_fff.jpg" data-background-size="contain" data-background-transition="slide">
+</section>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- Lindner profis  -->
+<section data-background="images/lindner_profi.png" data-background-size="contain" data-background-transition="slide">
+
+<div class="fragment fade-up" style="height:700px; background: rgba(20, 20, 20, 0.9);">
+<br>
+<br>
+<br>
+Entscheidende Fragen:
+
+<ul>
+<li> Wer hat <div class="fragment ilb grow nested_grow">Diskurshoheit</div>?</li>
+
+<div class="fragment fade-left">
+<li> Wer darf entscheiden, wer (nicht) am Diskurs teilnimmt <br>
+und worüber gesprochen wird?
+
+<div class="fragment fade-left">
+<br>
+→Frei nach Michel Foucault (1926-1984):
+<div class="myquote">
+„Wer die Grenzen des Diskurses bestimmt, <br>
+bestimmt auch sein Ergebnis.“
+</div>
+</div>
+</li>
+</div>
+
+</ul>
+
+
+</div>
+</section>
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- Scheuer Ärzte  -->
+<section data-background="images/scheuer_lungenaerzte1.jpg" data-background-size="contain" data-background-transition="slide">
+
+<div class="fragment fade-up" style="height:700px; background: rgba(20, 20, 20, 0.9);">
+<div style="height:350px; background: rgba(20, 20, 20, 0.9);">
+<br>
+<br>
+<br>
+<br>
+<br>
+Andreas Scheuer, Bundesverkehrsminister:
+
+
+<div class="myquote">
+„Wenn über 100 Wissenschaftler sich zusammenschließen,<br>
+ist das schon einmal ein Signal.“<span class="mysuperh1">[<a href="https://www.handelsblatt.com/politik/deutschland/diesel-fahrverbote-scheuer-begruesst-initiative-der-lungenaerzte-in-feinstaub-debatte/23904688.html">REF</a>]</span>
+</div>
+<br>
+
+</div>
+
+</div>
+</section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- Lungenarzt Köhler  -->
+<section data-background="images/lungenarzt_rechenfehler_tagesschau.jpg" data-background-size="contain" data-background-transition="slide">
+
+<div class="fragment fade-up" style="height:700px; background: rgba(20, 20, 20, 0.9);">
+<div style="height:350px; background: rgba(20, 20, 20, 0.9);">
+<br>
+<br>
+<br>
+<br>
+<br>
+Positionspapier von Dieter Köhler (verkürzt):
+<div class="myquote">
+Stickoxid kann nicht so schlimm sein,
+sonst müssten Raucher nach wenigen Monaten krank werden.
+<span class="mysuperh1">[<a href="https://www.handelsblatt.com/politik/deutschland/diesel-fahrverbote-scheuer-begruesst-initiative-der-lungenaerzte-in-feinstaub-debatte/23904688.html">REF</a>]</span>
+</div>
+<br>
+</div> <!-- block 1  -->
+<br>
+<div class="fragment fade-up" >
+taz (auf externen Hinweis)<span class="mysuperh1">[<a href="https://www.taz.de/!5572843/">REF</a>]</span>:
+<div class="myquote">
+Köhler hat sich an mehreren Stellen verrechnet. Teilweise um Faktor 100.
+Aus „wenigen Monaten“ werden bis zu 32 Jahre.
+</div>
+
+Weitere Artikel dazu: [<a href="https://www.taz.de/!5570977/">taz</a>,
+<a href="https://www.sueddeutsche.de/gesundheit/feinstaub-grenzwerte-stickoxid-1.4329818">SZ</a>,
+<a href="https://www.faz.net/aktuell/wissen/starker-tobak-fuer-die-lungenaerzte-16008412.html">FAZ</a>]
+
+</div> <!-- block 1  -->
+
+</div>
+</section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%    Veranstaltungshinweis: BuB DD        %%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+<section data-transition="fade">
+<h2>Zentrale  Herausforderungen <br>des 21. Jahrhunderts:</h2>
+<br>
+<div class="left_full">
+<span class="bigger">Digitalisierung</span>
+<span class="bigger" style="padding-left:260px;">Nachhaltigkeit</span>
+<br>
+<br>
+
+Beide Themen ...
+<ul>
+<li> hängen stark mit „Wissen“ zusammen</li>
+<div>
+<li>sind stark umstritten.</li>
+<div>
+<li>hängen mit der Verteilung von Geld und Macht zusammen.</li>
+</div>
+</div>
+</ul>
+</div> <!--left_full-->
+
+    <!--Veranstaltungshinweis-->
+
+<div class="fragment fade-up" style="height:700px; background: rgba(20, 20, 20, 0.95); position:relative; top:-200px;">
+
+    <h3>Veranstaltungshinweis</h3>
+
+    <br>
+    <br>
+    23.05.2019: Bits&amp;Bäume Dresden
+
+    <br>
+    Vortrag und Diskussion zu Digitalisierung und Nachhaltigkeit
+
+    <br>
+    <br>
+    →<a href="https://dresden.bits-und-baeume.org">dresden.bits-und-baeume.org</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%      Medienkritik und Verschwörungstheorien     %%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+### Medienkritik + Verschwörungstheorien (1)
+<div class="left_full">
+
+Nicht so seltene Position:
+<div class="fragment" data-fragment-index="2">
+<div class="myquote">
+Mainstream-Medien sind alle korrumpiert. Denen Glaube ich nichts mehr.
+<div class="fragment ilb fade-left" data-fragment-index="3">Lügenpresse!</div><div class="fragment fade-left ilb" data-fragment-index="4">!!</div>
+</div>
+</div>
+
+<div class="fragment" data-fragment-index="5">
+Für diese Position gibt es durchaus Indizien:
+</div>
+<ul>
+
+<li class="fragment" data-fragment-index="6">Medien werden von Menschen mit individuellen Meinungen/Interessen gemacht
+</li>
+<li class="fragment" data-fragment-index="7"> ∃ Zahlreiche Beispiele für falsche bzw.<br>
+einseitige Berichterstattung
+</li>
+</ul>
+
+
+<div class="fragment" data-fragment-index="8">
+<br>
+Mögliche Konsequenzen:
+</div>
+
+<ul>
+<li class="fragment" data-fragment-index="9">
+Berücksichtigung verschiedener Perspektiven <br>+ Abgleich mit bekanntem Wissen
+<div class="ilb fragment fade-left" data-fragment-index="10">(mühsam)</div>
+</li>
+<li class="fragment" data-fragment-index="11">
+Eintritt in die Flat-Earth-Society, ...
+</li>
+</ul>
+
+<div style="position:absolute; top:380px; right:-100px;">
+<img src="images/flat_earth_society.png" class="fragment fade-down" style="height=300px;" data-fragment-index="11">
+</div>
+
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%      Medienkritik und Verschwörungstheorien  2   %%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+### Medienkritik + Verschwörungstheorien (2)
+<div class="left_full">
+
+<br>
+<div class="bigger">
+Wie erkennt man eine gute (Verschwörungs-)Theorie?
+</div>
+<br>
+<ul>
+
+<li class="fragment">
+Widerspruchsfreiheit nach innen
+</li>
+<li class="fragment">
+Widerspruchsfreiheit nach außen
+</li>
+<li class="fragment">
+Falsifizierbarkeit
+</li>
+</ul>
+
+
+<br>
+<br>
+
+
+<div class="fragment">
+→„Geschlossene Weltbilder“ lassen sich mit noch so guten Argumenten nicht aufbrechen.
+</div>
+
+<br>
+<div class="fragment">
+Im Zweifelsfall haben <span class="italic">sie</span> die Beweise gefälscht.
+</div>
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Grundsatzproblem (1)      %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Grundsatzprobleme (1):
+<div class="left_full">
+
+<ul>
+
+<li class="fragment">100% verlässliche Aussagen über <br>komplexe Probleme ∈ {schwierig, ..., unmöglich}
+</li>
+<li class="fragment">Allgemeinverständlichkeit zwingt zu Vereinfachung
+</li>
+<li class="fragment">Vereinfachung macht Argumentation angreifbar
+</li>
+<li class="fragment">Diskurse werden unübersichtlich
+→ Resignationspotential
+</li>
+<li class="fragment fade-right">Medien ❤ Konflikte ⚡⚡⚡
+<ul>
+<li>Spannung → Aufmerksamkeit → Quote/Klicks</li>
+<li>kontroverse Minderheitenpositionen (z.B. „Klimaskeptiker“, „Impfgegner“) werden tendentiell überrepräsentiert</li>
+</ul>
+</li>
+<li class="fragment">Unbequemes Wissen stößt auf Ablehnung
+(„kognitive Dissonanzen“)
+</li>
+<li class="fragment fade-right">Filterblasen und Echokammern
+</li>
+</ul>
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- Filter Blase  -->
+<section data-background="images/Social-media-bubble_1.jpg" data-background-size="contain" data-background-transition="slide">
+
+<div style="position:absolute; bottom:-640px; right:50px;">
+<span class="tiny" style="background: rgba(0, 0, 0, 0.5);">Bildquelle: https://www.sticky.digital/danger-of-living-in-a-filter-bubble/</span>
+</div>
+<!-- https://www.sticky.digital/danger-of-living-in-a-filter-bubble/ -->
+</section>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- Echo-Kammer  -->
+<section data-background="images/echo_chamber.jpg" data-background-size="contain" data-background-transition="slide">
+<div style="position:absolute; top:-40px; right:200px;">
+<span class="tiny" style="background: rgba(0, 0, 0, 0.5);">Bildquelle: https://hackernoon.com/are-you-living-in-an-echo-chamber-d25ed166c45f</span>
+</div>
+<!-- https://hackernoon.com/are-you-living-in-an-echo-chamber-d25ed166c45f -->
+</section>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- Ortschild-Kammer  -->
+<section data-background="images/meine_meinung_steht_fest_ortseingangsschild.png" data-background-size="contain" data-background-transition="slide">
+
+<div style="position:absolute; top:-35px; right:200px;">
+<span class="tiny" style="background: rgba(0, 0, 0, 0.5);">Bildquelle: https://www.istdaslustig.de/spruch/43</span>
+</div>
+<!-- https://www.istdaslustig.de/spruch/43 -->
+</section>
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Grundsatzprobleme (2)       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Grundsatzprobleme (2):
+<div class="left_full">
+
+<ul>
+
+<li class="fragment">Hinter kontroversen Themen stecken oft <span class="bold">Interessen</span><br>
+→ Angriffsvektoren werden ausgenutzt
+
+<div class="fragment fade-down" style="position:absolute; top:80px; right:-100px;">
+<img src="images/merchants_of_doubt.jpg" style="transform: scale(0.8);" ><br>
+<span class="tiny">Bildquelle: <a href="https://www.amazon.com/Merchants-Doubt-Handful-Scientists-Obscured-ebook/dp/B003RRXXO8">https://www.amazon.com/Merchants-Doubt...</a> </span>
+</div>
+</li>
+
+<li class="fragment fade-up">
+Erkenntnistheoretisch gebotener Zweifel <br>
+überschneidet sich mit egoistischen Motiven
+</li>
+<li class="fragment fade-up"> <div class="myquote">
+„Klimawissenschaftler erfanden den Klimawandel<br>
+um weitere Finanzierung der Forschung zu sichern“
+</div>
+<br>
+<br>
+</li>
+<li class="fragment">
+Was hilft?
+<br>
+→ Differenzierte Betrachtung im jeweiligen Einzelfall
+<br>
+(mühsam)
+</li>
+</ul>
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%            Gliederung (5)                %%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown>
+<textarea data-template>
+# Gliederung
+
+- Vorstellung ✓
+- Formale Definition (Versuch) ✓
+- Philosophische Sichtweisen (bis 20. Jh.) ✓
+- MINT-Perspektive ✓
+- Wissen im 21. Jh.<div class="fragment ilb fade-down">✓</div>
+- <div class="fragment highlight-bluez" >Digitale Represenation von Wissen</div>
+- Zusammenfassung
+
+</textarea>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%     Digitale Repräsentation von Wissen   %%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Digitale Repräsentation von Wissen
+<div class="left_full">
+
+<div class="bigger">
+Vorteile digitaler Technologien
+</div>
+
+
+<div class="fragment">
+
+- Viel Speicherplatz
+- Sehr hohe Verarbeitungsgeschwindigkeiten (z.B. Suchen/Sortieren)
+
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="fragment">
+<div class="bigger">
+Umsetzungen:
+</div>
+
+
+
+- Wikipedia
+- Youtube
+- Maschinelles Lernen
+- Expertensysteme
+
+</div>
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%     Digitale Repräsentation von Wissen   %%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Wikipedia
+<div class="left_full">
+
+<div class="bigger">
+Wikipedia<span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/Wikipedia">REF</a>]</span>:
+</div>
+<div class="myquote">
+Wikipedia [ˌvɪkiˈpeːdia] ist ein am 15. Januar 2001 gegründetes gemeinnütziges Projekt zur Erstellung einer Enzyklopädie in zahlreichen Sprachen mit Hilfe des
+<div class="fragment grow nested_grow"> Wikiprinzips</div>.
+</div>
+
+<div class="fragment">
+
+- Jede/r kann mitmachen
+- Immenser Nutzwert für die Gesellschaft
+- Widerspruchsfreiheit? <div class="fragment ilb fade-left">eher nicht</div>
+</div>
+<div class="fragment">
+- Nicht immun gegen inner-gesellschaftliche Konflikte → „Edit-Wars“
+</div>
+
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%     Digitale Repräsentation von Wissen   %%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## YouTube
+<div class="left_full">
+
+<div class="bigger">
+YouTube<span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/YouTube">REF</a>]</span>:
+</div>
+<div class="myquote">
+YouTube ist ein 2005 gegründetes Videoportal des US-amerikanischen Unternehmens YouTube, LLC, seit 2006 eine Tochtergesellschaft von Google LLC
+... .
+</div>
+
+<ul>
+
+<div class="fragment">
+<li>Jede/r kann Videos hochladen</li>
+<li>Verursacht ca. 10 Prozent des gesamten Datenverkehrs</li>
+<li>Inhaltliche Korrektheit ist kein Kriterium</li>
+</div>
+</ul>
+
+
+<div class="fragment">
+<br>
+Geschäftsmodell:</div>
+<ul>
+<li class="fragment fade-down">Daten sammeln und zielgerichtete Werbung anzeigen</li>
+
+<li class="fragment">Optimierungskriterium: <div class="fragment ilb fade-left">screen time</div>
+</li>
+
+<li class="fragment">
+Funktioniert mit: <div class="fragment ilb shrink">Lernvideos</div> <div class="fragment ilb grow nested_grow">Katzenvideos</div>
+</li>
+
+<li class="fragment">
+Alternativvorschlag: <a href="http://viewpure.com/">http://viewpure.com</a>
+</li>
+
+</ul>
+
+
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%     Maschinelles Lernen                  %%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Maschinelles Lernen
+<div class="left_full">
+
+<div class="bigger">
+Methoden:
+</div>
+
+- Künstliche Neuronale Netze
+- Support Vector Machines
+- Entscheidungsbäume, ...
+
+
+<img src="images/classifier_comparison_001.png" class="fragment">
+
+<div class="fragment">
+Gemeinsames Ziel:
+Aus bekannten Daten Zusammenhänge extrahieren und auf a priori unbekannte Daten anwenden
+</div>
+
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%     Expertensystem   %%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Expertensystem
+<div class="left_full">
+
+
+<div class="fragment">
+Ziel: bekannten Informationen geeignet verknüpfen,<br>
+um sie (anderen) leichter zugänglich zu machen.
+</div>
+
+<div class="fragment" style="text-align:center">
+<img src="images/expertensystem.gif"  ><br>
+<span class="small">
+Quelle: <a  href="http://www.dfki.uni-kl.de/~aabecker/Mosbach/Experten/Reif-node8.html">http://www.dfki.uni-kl.de/~aabecker/Mosbach/Experten/Reif-node8.html</a>
+</span>
+</div>
+
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%            Gliederung (6)                %%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown>
+<textarea data-template>
+# Gliederung
+
+- Vorstellung ✓
+- Formale Definition (Versuch) ✓
+- Philosophische Sichtweisen (bis 20. Jh.) ✓
+- MINT-Perspektive ✓
+- Wissen im 21. Jh. ✓
+- Digitale Represenation von Wissen <div class="fragment ilb fade-down">✓</div>
+- <div class="fragment highlight-bluez" >Zusammenfassung</div>
+
+</textarea>
+</section>
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%      Zusammenfassung       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Zusammenfassung:
+<div class="left_full">
+
+<ul>
+<li class="fragment">
+Die Menschheit hat es in mehreren Jahrtausenden nicht geschafft, eine überzeugende
+Definition von <span class="italic">Wissen</span> zu finden.
+</li>
+
+<li class="fragment">
+Im Alltag werden epistemologische Fragestellungen häufig ignoriert.
+</li>
+
+<li class="fragment">
+Das ist einerseits pragmatisch vernünftig („Gibt es die Realität?“),
+andererseits könnte etwas mehr erkenntnistheoretische Sensibilität viele Konflikte vor der Eskalation bewahren.
+</li>
+</ul>
+
+<div class="fragment bigger">
+<br>
+<br>
+Vortrag:
+</div>
+<ul>
+<li class="fragment">
+Einsicht in die prinzipielle Beschränktheit des menschlichen Wissens
+</li>
+
+<li class="fragment">
+Behauptungen vs. Begründungen
+</li>
+
+<li class="fragment">
+Widerspruchsfreiheit, Falsifizierbarkeit
+</li>
+
+<li class="fragment">
+Immanuel Kant*<span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/Sapere_aude">REF</a>]</span>: <span class="myquote">Sapere aude!</span>
+</li>
+</ul>
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%      Einstein Zitat zum Internet    %%%%%%%%%%%%%%%%%%%%%%-->
+<section data-background="images/einstein_zitate_mit_bild.jpg" data-background-size="contain" data-background-transition="slide">
+
+<div style="position:absolute; bottom:-640px; right:50px;">
+<span class="tiny" style="background: rgba(0, 0, 0, 0.5);">Bildquelle: http://debeste.de/33542/Glaub-nicht-alles-im-Internet,-nur-weil-da-ein-Bild-mit-einen-Zitat-ist</span>
+</div>
+<!-- http://debeste.de/33542/Glaub-nicht-alles-im-Internet,-nur-weil-da-ein-Bild-mit-einen-Zitat-ist -->
+</section>
+
+
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%            Gliederung (7)                %%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown>
+<textarea data-template>
+# Gliederung
+
+- Vorstellung ✓
+- Formale Definition (Versuch) ✓
+- Philosophische Sichtweisen (bis 20. Jh.) ✓
+- MINT-Perspektive ✓
+- Wissen im 21. Jh. ✓
+- Digitale Represenation von Wissen ✓
+- Zusammenfassung<div class="fragment ilb fade-down">✓</div>
+- <div class="fragment highlight-bluez" >Bonusmaterial</div>
+
+</textarea>
+</section>
+
+
+
+
+
+<section>
+<h2>Bonusmaterial: Wissen behalten</h2>
+<br>
+<div class="left_full">
+Lerntechnik: <span class="bigger">Sapaced Repition<span class="mysuperh1">[<a href="https://en.wikipedia.org/wiki/Spaced_repetition">REF</a>]</span> </span>
+
+
+<ul>
+<li class="fragment fade-left" data-fragment-index="1">≙ klassischer Karteikartenmethode</li>
+
+<li class="fragment" data-fragment-index="2" >Wiederholung mit zunehmendem zeitlichen Abstand</li>
+
+<li class="fragment" data-fragment-index="3" >Hintergrund: exponentielle Vergessenskurve (Ebbinghaus)</li>
+<li class="fragment" data-fragment-index="4" >Empfehlenswert: <a href="https://ncase.me/remember/">dieser interaktive Comic
+<img src="images/spaced_repetition_screenshot.png" style="transform: scale(0.5);">
+</a>
+
+</li>
+
+</ul>
+
+
+
+<div style="position:absolute; top:120px; right:-100px;">
+<img src="images/230px-Leitner_system_alternative.svg.png" class="fragment fade-down" style="height=300px;" data-fragment-index="1">
+</div>
+
+<div style="position:absolute; top:380px; right:-100px;">
+<img src="images/forgetting-curve_en.gif" class="fragment fade-down" style="height=300px;" data-fragment-index="2">
+</div>
+
+
+
+</div> <!--left_full-->
+</section>
+
+
+
+
+
+
+
+
+
+
+ <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%            Referenzen                %%%%%%%%%%%%%%%%%%%%%%% -->
+
+<section id="references">
+
+<h1>Referenzen</h1>
+
+<ul>
+<li> https://www.zdf.de/wissen/frag-den-lesch/gibt-es-sicheres-wissen-102.html</li>
+<li> Duncan Pritchard: *What is this thing called Knowledge?*, Routledge 2006; SLUB</li>
+</ul>
+
+
+
+</section>
+
+
+
+<section data-background="images/Wissenstreppe_klaus_north_6653959.png" data-background-size="contain" data-background-transition="slide">
+</section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%                                             %%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%              Ende der Folien                %%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%                                             %%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+            </div>
+        </div>
+
+        <script src="js/reveal.js"></script>
+        <script src="plugin/_external_code/d3.min.js"></script>
+
+<!--         <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js"></script>         -->
+<!--         <script src="//cdn.jsdelivr.net/reveal.js/latest
+/lib/js/head.min.js"></script> -->
+<!--         <script src="//cdn.jsdelivr.net/reveal.js/latest/js/reveal.min.js"></script> -->
+
+
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true },
+                    // MathJax
+                    { src: 'plugin/math/math.js', async: true },
+                    { src: 'plugin/svg-fragments/reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } }
+                ],
+
+                // Factor of the display size that should remain empty around the content
+                margin: 0.1,
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.2,
+                maxScale: 1.5,
+
+                center: false
+            });
+            Reveal.configure({ slideNumber: 'c/t' });
+
+// if the respective fragment is triggered we remove the class `dispnone`which prevents display
+Reveal.addEventListener( 'fragmentshown', function( event ) {
+    if(event.fragment.id === 'appear') {
+        event.fragment.classList.remove("dispnone");
+    }
+} );
+        </script>
+    </body>
+</html>

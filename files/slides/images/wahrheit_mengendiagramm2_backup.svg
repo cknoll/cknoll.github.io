@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="949.04669"
+   height="402.10959"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="wahrheit_mengendiagramm2.svg">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       id="filter3785"
+       x="-0.056667466"
+       width="1.1133349"
+       y="-0.3138217"
+       height="1.6276433"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.8393351"
+         id="feGaussianBlur3787" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3877"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.39003295"
+         id="feGaussianBlur3879" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3885"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.39003295"
+         id="feGaussianBlur3887" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3919"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.77955796"
+         id="feGaussianBlur3921" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3929"
+       x="-0.058868572"
+       width="1.1177371"
+       y="-0.25998738"
+       height="1.5199747"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.4403179"
+         id="feGaussianBlur3931" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter3885-6">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.39003295"
+         id="feGaussianBlur3887-2" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3925"
+       x="-0.056828592"
+       width="1.1136572"
+       y="-0.30897027"
+       height="1.6179405"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="4.24675"
+         id="feGaussianBlur3927" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3930"
+       x="-0.056730293"
+       width="1.1134605"
+       y="-0.31190863"
+       height="1.6238173"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.9110421"
+         id="feGaussianBlur3932" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="614.88336"
+     inkscape:cy="64.125801"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <sodipodi:guide
+       orientation="0,1"
+       position="272.29604,330.62598"
+       id="guide3135" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="L1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(26.828966,-178.81745)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#decf9d;fill-opacity:0.58823529;stroke:#e6e6e6;stroke-width:0.64083987;filter:url(#filter3877)"
+       id="path2985"
+       sodipodi:cx="555.71429"
+       sodipodi:cy="379.50504"
+       sodipodi:rx="127.14286"
+       sodipodi:ry="127.14286"
+       d="m 682.85715,379.50504 c 0,70.21906 -56.92379,127.14286 -127.14286,127.14286 -70.21906,0 -127.14286,-56.9238 -127.14286,-127.14286 0,-70.21907 56.9238,-127.14287 127.14286,-127.14287 70.21907,0 127.14286,56.9238 127.14286,127.14287 z"
+       transform="matrix(2.3833266,0,0,1.5612279,-708.27218,-213.19934)" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3789"
+       y="373.74002"
+       x="554.3728"
+       style="font-size:29.10757828px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3925);font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       xml:space="preserve"
+       transform="matrix(1.559677,0,0,1.5612279,-250.55832,-213.19934)"><tspan
+         y="373.74002"
+         x="554.3728"
+         id="tspan3791"
+         sodipodi:role="line">Überzeugung</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:45.42098618px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       x="612.02496"
+       y="371.68631"
+       id="text2987"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99950316,1.0004971)"><tspan
+         sodipodi:role="line"
+         id="tspan2989"
+         x="612.02496"
+         y="371.68631">Überzeugung</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="L2"
+     style="display:inline"
+     transform="translate(26.828966,-178.81745)">
+    <path
+       transform="matrix(1.5280899,0,0,1,-513.46709,0)"
+       d="m 682.85715,379.50504 c 0,70.21906 -56.92379,127.14286 -127.14286,127.14286 -70.21906,0 -127.14286,-56.9238 -127.14286,-127.14286 0,-70.21907 56.9238,-127.14287 127.14286,-127.14287 70.21907,0 127.14286,56.9238 127.14286,127.14287 z"
+       sodipodi:ry="127.14286"
+       sodipodi:rx="127.14286"
+       sodipodi:cy="379.50504"
+       sodipodi:cx="555.71429"
+       id="path2997"
+       style="fill:#98d370;fill-opacity:0.58823529;stroke:#e6e6e6;display:none;filter:url(#filter3885)"
+       sodipodi:type="arc" />
+    <text
+       xml:space="preserve"
+       style="font-size:29.10757828px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:none;filter:url(#filter3785);font-family:Asana Math;-inkscape-font-specification:Asana Math"
+       x="170.08708"
+       y="373.74002"
+       id="text3769"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3771"
+         x="170.08708"
+         y="373.74002"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans">Wahrheit</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text2993"
+       y="374.09714"
+       x="169.3371"
+       style="font-size:29.10757828px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:none;font-family:Asana Math;-inkscape-font-specification:Asana Math"
+       xml:space="preserve"><tspan
+         y="374.09714"
+         x="169.3371"
+         id="tspan2995"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans">Wahrheit</tspan></text>
+    <path
+       transform="matrix(2.3833266,0,0,1.5612279,-1045.2576,-212.02814)"
+       d="m 682.85715,379.50504 c 0,70.21906 -56.92379,127.14286 -127.14286,127.14286 -70.21906,0 -127.14286,-56.9238 -127.14286,-127.14286 0,-70.21907 56.9238,-127.14287 127.14286,-127.14287 70.21907,0 127.14286,56.9238 127.14286,127.14287 z"
+       sodipodi:ry="127.14286"
+       sodipodi:rx="127.14286"
+       sodipodi:cy="379.50504"
+       sodipodi:cx="555.71429"
+       id="path2997-9"
+       style="fill:#98d370;fill-opacity:0.58823529;stroke:#e6e6e6;stroke-width:0.64083987;display:inline;filter:url(#filter3885-6)"
+       sodipodi:type="arc" />
+    <text
+       xml:space="preserve"
+       style="font-size:29.10757828px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;filter:url(#filter3930);font-family:Asana Math;-inkscape-font-specification:Asana Math"
+       x="174.02609"
+       y="374.49026"
+       id="text3769-1"
+       sodipodi:linespacing="125%"
+       transform="matrix(1.559677,0,0,1.5612279,-250.55832,-213.19934)"><tspan
+         sodipodi:role="line"
+         id="tspan3771-2"
+         x="174.02609"
+         y="374.49026"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans">Wahrheit</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text2993-7"
+       y="371.83804"
+       x="19.706205"
+       style="font-size:45.42098618px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Asana Math;-inkscape-font-specification:Asana Math"
+       xml:space="preserve"
+       transform="scale(0.99950316,1.0004971)"><tspan
+         y="371.83804"
+         x="19.706205"
+         id="tspan2995-0"
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Open Sans;-inkscape-font-specification:Open Sans">Wahrheit</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="L3"
+     style="display:inline"
+     transform="translate(26.828966,-178.81745)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#36889c;fill-opacity:1;stroke:#e6e6e6;stroke-width:1.55705512;display:inline;filter:url(#filter3919)"
+       id="path3889"
+       sodipodi:cx="555.71429"
+       sodipodi:cy="379.50504"
+       sodipodi:rx="127.14286"
+       sodipodi:ry="127.14286"
+       d="m 682.85715,379.50504 c 0,70.21906 -56.92379,127.14286 -127.14286,127.14286 -70.21906,0 -127.14286,-56.9238 -127.14286,-127.14286 0,-70.21907 56.9238,-127.14287 127.14286,-127.14287 70.21907,0 127.14286,56.9238 127.14286,127.14287 z"
+       transform="matrix(0.97783383,0,0,0.64457858,-99.452633,133.55853)" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3895"
+       y="385.52573"
+       x="397.3371"
+       style="font-size:29.10757827999999847px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;filter:url(#filter3929);font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       xml:space="preserve"
+       transform="matrix(1.559677,0,0,1.5612279,-250.55832,-213.19934)"><tspan
+         y="385.52573"
+         x="397.3371"
+         id="tspan3897"
+         sodipodi:role="line">Wissen</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:45.42098617999999988px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Open Sans;-inkscape-font-specification:Open Sans"
+       x="366.01904"
+       y="389.28922"
+       id="text3891"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99950316,1.0004971)"><tspan
+         sodipodi:role="line"
+         id="tspan3893"
+         x="366.01904"
+         y="389.28922">Wissen</tspan></text>
+  </g>
+</svg>

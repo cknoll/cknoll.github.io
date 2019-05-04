@@ -1,0 +1,157 @@
+/* left align */
+.left_full {
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:100%;
+  z-index:-10;
+}
+
+.left_fullp {
+  padding:50px;
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:100%;
+  z-index:-10;
+}
+
+/* left column */
+.left_c {
+/*   left:-8.33%; */
+  text-align: left;
+  float: left;
+  width:47%;
+  z-index:-10;
+  display: inline-block;
+}
+
+/* right column */
+.right_c {
+/*   left:31.25%; */
+  top: 75px;
+  float: right;
+  text-align: left;
+  z-index:-10;
+  width:47%;
+  display: inline-block;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+}
+
+
+
+/* https://github.com/hakimel/reveal.js/issues/745#issuecomment-422507012 */
+.reveal .slides section .fragment.step-fade-in-then-out {
+        opacity: 0;
+        display: none; }
+.reveal .slides section .fragment.step-fade-in-then-out.current-fragment {
+        opacity: 1;
+        display: inline; }
+
+
+.mysuperh1 {
+    position: relative;
+    top: -1.6em;
+    font-size: 30%;
+
+}
+
+
+.ilb {
+    display:inline-block;
+}
+
+.dispnone {
+    display:none;
+    height:0px;
+    line-height: 0px;
+    font-size: 0px;
+}
+
+.bg_highlight {
+    background: rgba(255, 255, 255, 0.1);
+}
+.nested_growl {
+
+    display:inline-block;
+    padding-left: 1.5em;
+}
+.nested_grow {
+
+    display:inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+/* .fragment.current-visible.visible:not(.current-fragment) { */
+.appear.visible:not(.current-fragment) {
+    color:red;
+    /*display: none;
+    height:0px;
+    line-height: 0px;
+    font-size: 0px;*/
+}
+
+.myquote {
+
+    margin: 20px auto;
+    padding: 5px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+.small {
+    font-size:50%;
+}
+.tiny {
+    font-size:8pt;
+}
+
+.bgb30 {
+
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.bold {
+    font-weight:bold;
+}
+.bigger {
+    font-size:120%;
+    font-weight:bold;
+}
+.mything {
+   color:red;
+}
+
+
+.reveal .slides section .fragment.highlight-bluez,
+.reveal .slides section .fragment.highlight-current-bluez {
+  opacity: 1;
+  visibility: inherit; }
+
+.reveal .slides section .fragment.highlight-bluez.visible {
+/*   color: #fb91ff; */
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.reveal .slides section .fragment.highlight-current-bluez.current-fragment {
+/*   color: #0bf1f0; */
+/* Unklar wofür das gebraucht wird */
+  background: rgba(255, 255, 255, 0.15);
+
+}
