@@ -1,0 +1,774 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+        <!--<link rel="stylesheet" href="css/theme/white.css">-->
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/monokai.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+
+<!-- <span class="mysuperh1">[<a href="URL">REF</a>]</span> -->
+<!-- <span class="mysuperh1">[<a href="https://de.wikipedia.org/wiki/Sapere_aude">REF</a>]</span> -->
+<!-- data-fragment-index="2" -->
+
+
+<!-- <span class="italic">Verifikation</span>  -->
+
+<!-- style="margin-left: 2em;" data-fragment-index="3" -->
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Titel       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Public Money? Public Code!
+
+### Über einen riesigen blinden Fleck der Digitalisierungsdebatte
+
+<br>
+<br>
+<br>
+<div><a href="https://fsfw-dresden.de/pmpc">https://fsfw-dresden.de/pmpc</a></div>
+
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown>
+<textarea data-template>
+# Wer spricht?
+
+Carsten Knoll,
+<ul>
+<li>Post-Doc <br>@ Institut für Regelungs- und Steuerungstheorie</li>
+<li class="fragment">
+Mitglied <a href="https://tuuwi.de">TUUWI</a> (TU-Umweltinitiative)
+</li>
+<li class="fragment">
+Gründungsmitglied (<a href="https://fsfw-dresden.de">FSFW</a>)<br>
+Hochschulgruppe Freie &nbsp; &nbsp;Software und Freies Wissen
+</li>
+<li class="fragment fade-down">
+Ko-Organisator <a href="https://dresden.bits-und-baeume.org/">Bits&amp;Bäume Dresden</a>
+<br>
+(Konferenz/Netzwerk für Nachhaltigkeit und Digitalisierung)
+</li>
+<li class="fragment fade-down">
+Support-Mitglied <a href="https://fsfe.org/">Free Software Foundation Europe</a>
+<span class="small">(bisher weitgehend passiv)</span>
+</li>
+</ul>
+</textarea>
+</section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       FSFW       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Hochschulgruppe für Freie Software und Freies Wissen
+
+<div class="left_full">
+
+
+<ul>
+
+<li class="fragment">
+2014 geründet
+</li>
+
+<li class="fragment">
+Projekte:
+
+<ul>
+
+<li class="fragment">
+Verschlüsselungsgewinnspiel
+</li>
+
+<li class="fragment">
+Linux-Install-Parties
+</li>
+
+<li class="fragment">
+Programm-Papier
+</li>
+
+<li class="fragment">
+Uni-Stick, ...
+</li>
+
+<li class="fragment">
+Workshops (Mailverschlüsselung, Versionsverwaltung, Programmierung)
+</li>
+</ul>
+
+</li>
+
+</ul>
+
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Digitalisierung       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Digitalisierung??
+
+
+<div style="display:inline-block; width:47%; vertical-align: text-top; border:none;">
+    <img src="images/pmpc/digi1.jpg" class="raw" width="100%" style="margin: 0px; padding:0px;" >
+</div>
+
+<div style="display:inline-block; width:47%; vertical-align: text-top; border:none;">
+    <img src="images/pmpc/digi2.jpg" class="raw fragment" width="100%" style="margin: 0px; padding:0px;" >
+</div>
+<br>
+
+<div style="display:inline-block; width:47%; vertical-align: text-top; border:none;">
+    <img src="images/pmpc/digi3.jpg" class="raw fragment" width="100%" style="margin: 0px; padding:0px;" >
+</div>
+
+<div style="display:inline-block; width:47%; vertical-align: text-top; border:none;">
+    <img src="images/pmpc/digi4.png" class="raw fragment" width="100%" style="margin: 0px; padding:0px;" >
+</div>
+<br>
+
+
+<div class="fragment">
+    → Schwammiges Hype-Wort
+</div>
+</textarea></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Bunter Sand       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## "Digitalisierung ohne Software ist nur bunter Sand"
+
+
+<div>
+<!--<a href="https://web.archive.org/web/20030216071253/http://www.integrale.de/">-->
+<img src="images/pmpc/main-board-89050_960_720.jpg" class="raw" width=60% style="margin: 0px; padding:0px;" >
+<!--</a>-->
+</div>
+
+<br>
+<div class="small fragment fade-up">
+Sand → Silizim → Mikrochips
+</div>
+
+</textarea></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Quellcode   1    %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Quellcode vs. Kompilat (1)
+
+### Wie wird Software lebendig?
+
+
+<div>
+<!--<a href="https://web.archive.org/web/20030216071253/http://www.integrale.de/">-->
+<img src="images/pmpc/source-code-583537_960_720.jpg" class="raw" width=60% style="margin: 0px; padding:0px;" >
+<!--</a>-->
+</div>
+
+<br>
+<div class="fragment fade-up">
+Quellcode → „Compiler“ → Maschinen Code
+</div>
+<br>
+<div class="fragment fade-up">
+Live Beispiel (Kompilierung von <code class="bgg">helloworld.c</code>)
+</div>
+
+</textarea></section>
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Quellcode  2     %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Quellcode vs. Kompilat (2)
+
+<br>
+
+
+<div class="left_c">
+
+<h3>Quellcode</h3>
+<br>
+    <div class="fragment fade-right">
+        ⊕ Einfach verständlich
+    </div>
+    <div class="fragment fade-right">
+        ⊕ Enthält Kommentare
+    </div>
+    <div class="fragment fade-right">
+        ⊕ Nachvollziehbare Änderungen (Versionsverwaltung)
+    </div>
+    <div class="fragment fade-right">
+        ⊖ Nicht ausfürbar
+    </div>
+
+</div>
+
+<div class="right_c fragment">
+
+<h3>Maschinencode</h3>
+<br>
+    <div class="fragment fade-left">
+        ⊖ Quasi unverständlich
+    </div>
+    <div class="fragment fade-left">
+        ⊖ Keine Kommentare
+    </div>
+    <div class="fragment fade-left">
+        ⊖ kaum nachvollziehbare Änderungen
+    </div>
+    <div class="fragment fade-left">
+        ⊕ ausfürbar
+    </div>
+
+</div>
+
+</textarea></section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       4 Freiheiten       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Freie Software: Vier Freiheiten
+
+
+<div>
+<!--<a href="https://web.archive.org/web/20030216071253/http://www.integrale.de/">-->
+<img src="images/pmpc/girl-1357485_960_720.jpg" class="raw" width=55% style="margin: 0px; padding:0px;" >
+<br>
+<img src="images/pmpc/vier_freiheiten.png" class="raw fragment fade-up" width=55% style="margin: 0px; padding:0px;" >
+
+<!--</a>-->
+</div>
+
+</textarea></section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Proprietäre Software      %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Proprietäre Software
+
+
+<div>
+<!--<a href="https://web.archive.org/web/20030216071253/http://www.integrale.de/">-->
+<img src="images/pmpc/handcuffs-964522_960_720.jpg" class="raw" width=54% style="margin: 0px; padding:0px;" >
+<br>
+<img src="images/pmpc/vier_freiheiten_cross.png" class="raw fragment fade-up" width=54% style="margin: 0px; padding:0px;" >
+
+<div class="fragment">
+Typisches Geschäftsmodell: Verkauf von Lizenzen
+</div>
+<!--</a>-->
+</div>
+
+</textarea></section>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Proprietäre Software      %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Proprietäre Software - Nachteile
+
+
+
+<div class="left_full">
+
+<ul>
+
+<li class="fragment">
+„Vendor Lockin“ (Abhängigkeit)
+</li>
+
+<li class="fragment">
+Unsicherheit (Hintertüren)
+</li>
+
+<li class="fragment">
+Nicht selbst anpassbar
+</li>
+
+<li class="fragment">
+Kein Lerneffekt
+    <br>
+    <br>
+    <br>
+</li>
+
+<li class="fragment fade-up">
+🤔 Warum ist Microsoft Office eigentlich <em>kostenlos</em> für Studierende 🤔
+
+<br>
+<div class="small fragment fade-down">Stichwort <a href="https://fsfw-dresden.de/landesvertrag">Landesvertrag</a></div>
+</li>
+
+</ul>
+
+
+</div> <!-- end of div-left-full -->
+
+</textarea></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Aktueller Stand       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Aktueller Stand
+
+
+<div>
+
+<br>
+<!--</a>-->
+</div>
+<div style="display:inline-block; width:30%; vertical-align: text-top; border:none;">Haushalte
+<br>
+    <img src="images/pmpc/wohnung.jpg" class="raw" width="100%" style="margin: 0px; padding:0px;" >
+</div>
+<div class="fragment grow" style="display:inline-block;width:30%; vertical-align: text-top; border:none;">Staat
+<img src="images/pmpc/1024_Rathaus-01_Daniel-Heine.jpg" class="raw" width=100% style="margin: 0px; padding:0px;" >
+<span class="tiny" style="position:relative; top:-50px; background: rgba(0, 0, 0, 0.5);">
+Bildquelle:
+<a href="https://www.dresden.de/de/rathaus.html.php">
+https://www.dresden.de/de/rathaus.html.php</a></span>
+</div>
+<div style="display:inline-block;width:30%; vertical-align: text-top; border:none;">Wirtschaft
+<img src="images/pmpc/wirtschaft.jpg" class="raw" width=100% style="margin: 0px; padding:0px;" >
+</div>
+</textarea></section>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Bsp: Stadtverwaltungen       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Beispiel: Stadtverwaltungen
+
+
+<div>
+<!--<a href="https://www.meschede.de/rathaus-service/politik-verwaltung/aufbau-der-stadtverwaltung/">-->
+<img src="images/pmpc/organigramm.jpg" class="raw" width=60% style="margin: 0px; padding:0px;" >
+<br>
+<span class="tiny" style="position:relative; top:-50px; background: rgba(0, 0, 0, 0.5);">
+Bildquelle:
+<a href="https://www.meschede.de/rathaus-service/politik-verwaltung/aufbau-der-stadtverwaltung/">
+https://www.meschede.de/rathaus-service/politik-verwaltung/aufbau-der-stadtverwaltung/</a></span>
+
+<!--</a>-->
+</div>
+
+<div class="left_full">
+
+<ul>
+
+<li class="fragment">
+Proprietäre Software dominiert (Betriebssystem, Office, ...)
+</li>
+
+<li class="fragment">
+Freie Software ist die Ausnahme
+</li>
+
+</ul>
+
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Limux       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Exkurs: LiMux (München, 2003-2020)
+
+
+<div class="bg_grey02">
+<!--<a href="https://www.meschede.de/rathaus-service/politik-verwaltung/aufbau-der-stadtverwaltung/">-->
+<img src="images/pmpc/limux.png" class="raw" width=60% style="margin: 0px; padding:0px;" >
+<br>
+<span class="tiny" style="position:relative; top:-10px; background: rgba(0, 0, 0, 0.5);">
+Bildquelle:
+<a href="https://de.wikipedia.org/wiki/Datei:LiMux_(logo).svg">
+https://de.wikipedia.org/wiki/Datei:LiMux_(logo).svg</a></span>
+
+<!--</a>-->
+</div>
+
+<div class="left_full">
+
+<ul>
+
+<li class="fragment">
+Stadtrat 2003: Umstellung aller 12K Rechner auf freie Software
+</li>
+
+<li class="fragment">
+Kontroverse Diskussionen
+</li>
+
+<li class="fragment">
+Ende 2013: Umstellung abgeschlossen
+</li>
+
+<li class="fragment">
+2014: Dieter Reiter (gilt als MS-Fan) wird OB
+</li>
+<li class="fragment">
+    2014: Überprüfung <span class="small">(Auslöser: Schwierigkeiten mit Mail-Anbindung auf Smartphones)</span>
+</li>
+
+<li class="fragment">
+Microsoft 2013: Zentrale → München
+</li>
+
+<li class="fragment">
+Stadtrat 2017: Rückmigration
+</li>
+
+</ul>
+
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%      Komuna    %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Tourismus-Apps (Komuna GmbH)
+
+<div>
+<img src="images/pmpc/komuna.jpg" class="raw" width=55% style="margin: 0px; padding:0px;" >
+</div>
+<br>
+
+<div class="fragment fade-right">
+Eine  <a href="https://play.google.com/store/search?q=Komuna%20GmbH&c=apps&hl=de">Firma</a> verkauft jeder Kommune
+quasi das gleiche Produkt mit einer anderen Verpackung
+</div>
+
+</textarea></section>
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       PMPC   1    %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## → Naheliegende Forderung
+
+
+<div>
+<img src="images/pmpc/pmpc.jpg" class="raw" width=60% style="margin: 0px; padding:0px;" >
+</div>
+<br>
+
+<div class="fragment fade-right">
+Kampagne der FSFE: <a href="https://publiccode.eu/">https://publiccode.eu/</a>
+</div>
+
+</textarea></section>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       PMPC   2    %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+
+
+
+<div>
+<img src="images/pmpc/offener_brief1.jpg" class="raw" width=60% style="margin: 0px; padding:0px;" >
+</div>
+<br>
+
+<div class="fragment grow">
+<a href="https://publiccode.eu/de/openletter/">https://publiccode.eu/de/openletter/</a>
+</div>
+
+</textarea></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       PMPC   3    %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+
+## Forderung:
+
+
+<br>
+<br>
+<br>
+
+<div class="myquote fragment grow">
+“Sorgen Sie für rechtliche Grundlagen, die es erfordern, dass öffentlich finanzierte Software, die für die öffentliche Verwaltung entwickelt wurde, unter einer Freie-Software- und Open-Source-Lizenz öffentlich zugänglich gemacht werden muss.”
+</div>
+
+</textarea></section>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       PMPC Gründe       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+
+
+
+<div>
+    <br>
+<!--<a href="https://web.archive.org/web/20030216071253/http://www.integrale.de/">-->
+<img src="images/pmpc/pmpc_gruende.jpg" class="raw" width=99% style="margin: 0px; padding:0px;" >
+<br>
+
+<!--</a>-->
+</div>
+
+<div class="left_full">
+
+
+</div> <!-- end of div-left-full -->
+</textarea></section>
+
+
+
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Videos       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Videos
+
+
+<div>
+<a href="https://vimeo.com/234308738">
+<img src="images/pmpc/pmpc_vimeo.jpg" class="raw" width=50% style="margin: 0px; padding:0px;" >
+</a>
+<a class="tiny" href="https://vimeo.com/234308738"><br> https://vimeo.com/234308738</a>
+
+<br>
+</div>
+
+<div >
+<a href="http://www.viewpure.com/_ZaDuinGf2o?start=0&end=0">
+<img src="images/pmpc/ms_dilemma.jpg" class="raw" width=50% style="margin: 0px; padding:0px;" >
+</a>
+<br>
+<a class="tiny" href="http://www.viewpure.com/_ZaDuinGf2o?start=0&end=0">http://www.viewpure.com/_ZaDuinGf2o</a>
+
+</div>
+
+
+</textarea></section>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Status 1      %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Aktueller Stand: Positiv-Beispiele
+
+<div class="left_full">
+
+Schleswig Hollstein (Jamaika Koalitionvertrag)
+    <br>
+
+<div class="myquote fragment">
+“Voraussetzung für die Digitalisierung in allen
+Bereichen sind höchste Standards beim
+Datenschutz und der IT-Sicherheit. [...] Dies
+erreichen wir durch den verstärkten Einsatz von
+unabhängig überprüfbarer Hard- und Software,
+[...], Open-Source-Technologie”
+</div>
+
+<div class="myquote fragment">
+“Wir verfolgen den vordringlichen Einsatz von Open-
+Source Software, auch um Abhängigkeiten der
+öffentlichen Verwaltung von einzelnen
+Softwareanbietern soweit wie möglich zu reduzieren. Um
+dieses Ziel zu erreichen, werden wir unter anderem die
+entsprechenden Ausschreibungsbedingungen
+überarbeiten. Eine vollständige Ablösung ist das
+langfristige Ziel.”
+
+</div>
+
+</div> <!-- end of div-left-full -->
+
+
+</textarea></section>
+
+
+<section data-background="images/barcelona_folie.jpg" data-background-size="contain" data-background-transition="slide"></section>
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%       Status       %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<section data-markdown><textarea data-template>
+## Aktueller Stand 2
+
+<div class="left_full">
+
+
+
+<ul>
+
+<li class="fragment">
+Offener Brief hat 22K Unterschriften
+</li>
+
+<li class="fragment">
+Sehr positives Echo aus der <em>Fachwelt</em>
+</li>
+
+<li class="fragment">
+Überschaubare Resonanz in außerhalb der IT- bzw. FOSS-Blase
+    <br>
+    <br>
+    <br>
+</li>
+
+</ul>
+</div> <!-- end of div-left-full -->
+
+<div class="fragment fade-up">
+<div class="fragment grow">
+→ Was tun?
+    <br>
+    <br>
+</div>
+</div>
+<div class="fragment fade-up small">
+    (Überleitung zur Diskussion)
+</div>
+
+
+</textarea></section>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+
+            </div> <!--         <div class="slides"> -->
+        </div>     <!--         <div class="reveal"> -->
+
+        <script src="js/reveal.js"></script>
+        <script src="plugin/_external_code/d3.min.js"></script>
+
+<!--         <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js"></script>         -->
+<!--         <script src="//cdn.jsdelivr.net/reveal.js/latest/lib/js/head.min.js"></script> -->
+<!--         <script src="//cdn.jsdelivr.net/reveal.js/latest/js/reveal.min.js"></script> -->
+
+
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    // MathJax
+                    { src: 'plugin/math/math.js', async: true },
+                    { src: 'plugin/svg-fragments/reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } }
+                ], // End of dependencies
+
+//                 width: 1024,
+//                 height: 760,
+
+                // Factor of the display size that should remain empty around the content
+                margin: 0.15,
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.2,
+                maxScale: 1.5,
+
+                center: false
+            });
+            Reveal.configure({ slideNumber: 'c/t' });
+
+
+            Reveal.addEventListener( 'appear2', function() {
+            alert("test");
+            // Called each time the slide with the "stats" state is made visible
+            } );
+
+            Reveal.addEventListener( 'fragmentshown', function( event ) {
+    if(event.fragment.id === 'highlight') {
+        event.fragment.classList.add("bg_highlight");
+    }
+} );
+        </script>
+    </body>
+</html>
