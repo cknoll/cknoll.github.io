@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>blog:cknoll &middot; Subjective Thoughts on the Semantic Web from a Python-based Developer in 2021</title>
+        <link rel="shortcut icon" href="http://cknoll.github.io/theme/icons/favicon.png" />
+        <link href="http://cknoll.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog:cknoll RSS Feed" />
+
+        <link rel="stylesheet" href="//cknoll.github.io/theme/css/screen.css" type="text/css" />
+        <link rel="stylesheet" href="//cknoll.github.io/theme/css/pygments.css" type="text/css" />
+    </head>
+    <body>
+<div id="header">
+            <ul id="nav">
+                <li><a href="http://cknoll.github.io">Home</a></li>
+<li><a href="http://cknoll.github.io/pages/impressum.html">Impressum</a></li>
+<li><a href="http://cknoll.github.io/archives.html">Archiv</a></li>
+                <li> <a href="http://cknoll.github.io/feeds/all.rss.xml"><img src="http://cknoll.github.io/theme/icons/rss.png" title="RSS Feed" alt="rss-symbol"> RSS Feed</a></li>
+            </ul>
+            <div class="header_box">
+                <h1><a href="http://cknoll.github.io">blog:cknoll</a></h1>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <h4 class="date">Nov 04,  2021</h4>
+                <div class="post">
+<h2 class="title">
+                        <a id="semantic-python-subjective-notes" href="http://cknoll.github.io/semantic-python-subjective-notes-en.html" rel="bookmark" title="Permanent Link to &quot;Subjective Thoughts on the Semantic Web from a Python-based Developer in 2021&quot;">Subjective Thoughts on the Semantic Web from a Python-based Developer in 2021</a>
+                    </h2>
+
+
+
+
+    <hr>
+<p>This blog post serves to publicly note some subjective thoughts on the thematic complex of <em>ontologies and the semantic web</em> which currently do not have a better place to live. This text started as a personal note dump inside a personal repository which now is more a <a href="https://github.com/pysemtec/semantic-python-overview">group effort</a> and part of the <a href="https://pysemtec.org/">pysemtec interest group</a>.</p>
+<p></p>
+<h1>Possible Issues for other Projects:</h1>
+<p>This section collects <em>observations</em> that I perceive as classical <em>issues</em> for a software project, i.e. things that could be improved. I not them here, if there is no issue tracker.</p>
+<h2>Owlready</h2>
+<ul>
+<li>There should be an official issue tracker</li>
+<li>The code should be automatically checked by some continuous integration service<ul>
+<li>Potential problems: waste of energy and ressources through cloud services.</li>
+<li>Potential solution: configure CI such that only selected branches are tracked, like in <a href="https://github.com/cknoll/yamlpyowl/blob/main/.drone.yml"><code>.drone.yml</code> in yamlpyowl</a>.</li>
+</ul>
+</li>
+<li>Change the extension handling in <code>setup.py</code>. Reason: The usage of <code>cython</code> in <code>setup.py</code> is <a href="https://docs.cython.org/en/latest/src/userguide/source_files_and_compilation.html#distributing-cython-modules">not recommended by the cython documentation</a>.</li>
+<li>Disable the "owlready2_optimized"-warning in <code>driver.py</code>. The user should be warned during installation but not on every use of the library. Also the doc says: "its use is entirely optional", thus a warning every time seems inappropriate.
+<!--- Change the representation of <code>owlready2.Thing</code> and its subclasses. Currently this reads like <code>repr(owl2.Thing)</code> → <code>&lt;&lt;property object at 0x7fe8a3417040&gt; 'Thing'&gt;</code>. However "object property" IMHO has a different meaning in the context of OWL, see e.g. <a href="https://www.w3.org/TR/owl2-primer/">owl2-primer</a>.--></li>
+<li>Check if newer versions of Reasoners are available. At least Pellet seems to be outdated.</li>
+<li>Call JAVA-Reasoners directly instead of using <code>subprocess</code>. This might be relevant: <a href="https://www.py4j.org/index.html">https://www.py4j.org/index.html</a></li>
+<li>Update docs <a href="https://owlready2.readthedocs.io/">https://owlready2.readthedocs.io/</a> to current version.<ul>
+<li>Ideally, docs should be built automatically when a new version is released.</li>
+<li>Also, docs should be available for past versions too.</li>
+</ul>
+</li>
+<li><a href="https://owlready2.readthedocs.io/en/latest/annotations.html#custom-rendering-of-entities">docs on custom rendering</a> should provide information how to restore the original behavior<ul>
+<li>this can be done with <code>set_render_func(default_render_func)</code>, see also <a href="https://github.com/Cognonto/CWPK/blob/master/cwpk-29-extracting-object-data-properties.ipynb">https://github.com/Cognonto/CWPK/blob/master/cwpk-29-extracting-object-data-properties.ipynb</a></li>
+</ul>
+</li>
+<li>The file "owlready2_optimized.c" seems to get changed during installation with ("pip install -e ."). Thus it should not be part of the repository?</li>
+<li>The file "test_quadstore_slash.sqlite3" seems to get changed during unittest execution. Thus it should not be part of the repository?</li>
+</ul>
+<h1>Whislist fot the semantic python world:</h1>
+<ul>
+<li>There should be a maintained, performant and feature-rich (data-properties, SWRL rules) reasoner which is easily installable via pip and usable with owlready2-ontologies and probaly other packages</li>
+<li>There should be the possibility to load ontologies in formats like <code>.n3</code> (n-triples), <code>.ttl</code> (turtle), manchester, <code>.obo</code>, <code>.kif</code>.</li>
+<li>There should be tools to visually and interactively explore the content of an ontology</li>
+</ul>
+<h1>404 – A General Impression of the Semantic Web World</h1>
+<p>Reproducibility and Comprehensibiltiy seems to be a core goal of the whole semantic web idea. However, I discovered a surprisingly high percentage of orphaned projects. An incomplete list (compiled since spring 2021):</p>
+<ul>
+<li>http://www.semanticweb.org/ (time out)</li>
+<li>https://www.semanticdesktop.org/<ul>
+<li>links to: http://www.semanticweb.org/wiki/Semantic_Desktop (time out)</li>
+</ul>
+</li>
+<li>https://www.w3.org/2001/sw/wiki/Neologism<ul>
+<li>links to: http://neologism.deri.ie/ (time out)</li>
+</ul>
+</li>
+<li>
+<p>https://bioportal.bioontology.org/projects/TODE</p>
+<ul>
+<li>links to: http://ontologicaldiscovery.org/ (time out)</li>
+</ul>
+</li>
+<li>
+<p>https://lod-cloud.net/dataset/msc</p>
+<ul>
+<li>links to: http://msc2010.org/mscwork/<ul>
+<li>links to: http://4store.org/trac/wiki/SparqlServer (404)</li>
+<li>links to: <several other pages> (404)<ul>
+<li>https://lod-cloud.net/dataset/fu-berlin-eurostat</li>
+<li>https://lod-cloud.net/dataset/bfs-linked-data</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>links to: mailto:project-msc-lod@jacobs-university.de (automatic response: unreachable)</li>
+</ul>
+</li>
+<li>https://github.com/bfo-ontology/BFO/wiki<ul>
+<li>links to: http://ifomis.uni-saarland.de/bfo/discussion (404)</li>
+</ul>
+</li>
+<li>many of the <a href="https://wikibase-registry-query.wmflabs.org/#%23defaultView%3ATimeline%0ASELECT%20%3Fitem%20%3FitemLabel%20%3FcreationDate%20%28SAMPLE%28%3Flogo%29%20AS%20%3Fimage%29%0AWHERE%0A%7B%0A%20%20%20%20%3Fitem%20wdt%3AP11%20wd%3AQ20%20.%0A%20%20%20%20%3Fitem%20wdt%3AP5%20%3FcreationDate%20.%0A%09SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22%20%7D%0A%20%20%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP8%20%3Flogo%20%7D%0A%7D%0AGROUP%20BY%20%3Fitem%20%3FitemLabel%20%3FcreationDate">publicly listed wikibase instances</a> (see also <a href="https://wikibase-registry.wmflabs.org/wiki/Main_Page">here</a>) are not available (either 404 or 503 problems).</li>
+<li>https://www.isko.org/ko.html (International Society for Knowledge Organization) -&gt; KOS registry -&gt; https://bartoc.org/<ul>
+<li>https://bartoc.org/vocabularies?search=engineering<ul>
+<li>"Sorry, we have some technical problems! Please contact the administrator and include the error message below." (no error message shown)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>https://en.wikipedia.org/wiki/UMBEL → http://umbel.org/ → Online Casinos in Australia</li>
+<li>http://www.visualdataweb.de/webvowl/ Operation stopped in Oct. 2021</li>
+</ul>
+    
+        
+
+                    <div class="clear"></div>
+                    <div class="info">
+<a href="http://cknoll.github.io/semantic-python-subjective-notes-en.html">posted at November 04, 21:00</a>&nbsp;&middot;&nbsp;<a href="http://cknoll.github.io/category/artikel.html" rel="tag">Artikel</a>
+                        <div class="tags">
+                            <a href="http://cknoll.github.io/tag/knowledge-representation.html">Knowledge representation</a>
+                            <a href="http://cknoll.github.io/tag/semantic-web.html">Semantic Web</a>
+                            <a href="http://cknoll.github.io/tag/ontologies.html">Ontologies</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="clear"></div>
+                <div id="footer">
+                    <p>
+                    Mockingbird theme by <a href="http://nevanscott.com/">Nevan Scott</a>
+                    &middot;
+                    <a class="atom" href="http://cknoll.github.io/None">Feed</a>
+                    <br>
+                    <img src="http://hitwebcounter.com/counter/counter.php?page=5857611&style=0008&nbdigits=5&type=ip&initCount=0" title="paste and get counter working" Alt="paste and get counter working"   border="0" >
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>
