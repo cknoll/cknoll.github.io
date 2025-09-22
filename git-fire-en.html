@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>blog:cknoll &middot; git fire</title>
+        <link rel="shortcut icon" href="https://cknoll.github.io/theme/icons/favicon.png" />
+        <link href="https://cknoll.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog:cknoll RSS Feed" />
+
+        <link rel="stylesheet" href="//cknoll.github.io/theme/css/screen.css" type="text/css" />
+        <link rel="stylesheet" href="//cknoll.github.io/theme/css/pygments.css" type="text/css" />
+    </head>
+    <body>
+<div id="header">
+            <ul id="nav">
+                <li><a href="https://cknoll.github.io">Home</a></li>
+<li><a href="https://cknoll.github.io/pages/impressum.html">Impressum</a></li>
+<li><a href="https://cknoll.github.io/archives.html">Archiv</a></li>
+                <li> <a href="https://cknoll.github.io/feeds/all.rss.xml"><img src="https://cknoll.github.io/theme/icons/rss.png" title="RSS Feed" alt="rss-symbol"> RSS Feed</a></li>
+            </ul>
+            <div class="header_box">
+                <h1><a href="https://cknoll.github.io">blog:cknoll</a></h1>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <h4 class="date">Sep 22,  2025</h4>
+                <div class="post">
+<h2 class="title">
+                        <a id="git-fire" href="https://cknoll.github.io/git-fire-en.html" rel="bookmark" title="Permanent Link to &quot;git fire&quot;">git fire</a>
+                    </h2>
+
+
+
+    <hr>
+<h2>Intro</h2>
+<p>When wandering through the floors of university buildings I came across stickers on office doors like the following several times:</p>
+<p><img src="https://cknoll.github.io/images/2025-09-git-fire/git-gommit-push-leave-building.png" alt="old version of the meme. text: In case of fire; 1. git commit; 2. git push; 3. leave building" style="width: 100%;"/></p>
+<p>While in the first moment such stickers are funny, on a second thought they also induce a slightly bitter taste of <em>"well, actually ..."</em>.</p>
+<p>I want to breakdown my critique for each of the three points individually and propose a solution.</p>
+<h2>The Problem with "git commit"</h2>
+<p>The plain command <code>git commit</code> serves to commit the content of your staging area to the repo. This means if the user did not by chance execute <code>git add</code> immediately before it will likely result an incomplete or even empty commit (whereby the latter would be refused by default). Thankfully <code>git commit</code> offers the <code>--all</code> option (short version: <code>-a</code>) which automatically adds all modified files to the staging area which have already been tracked before. While this leaves newly created (and yet untracked) files in peril of data loss, it seems to be the saver option for a general emergency recommendation (which might be automated, see below). The alternative would be to call <code>git add .</code> which would stage every modified file in the directory – including untracked ones – and thus bear the risk of accidentally sharing unwanted information such as credentials. Of course, proficient and responsible git users would have explicitly added suitable patterns to their <code>.gitignore</code> file but it cannot be assumed that the complete target audience of a <code>git commit; git push</code>-guide has enough background knowledge for this safety measure.</p>
+<p>The second problem with the plain <code>git commit</code> command (which also affects <code>git commit -a</code>) is the lack of a specified commit message. This would therefor fire up (pun intended) the default editor and prompt for a commit message -- which is probably not the desirable behavior of a emergency command. Hence the recommended version for the first command is:</p>
+<div class="highlight"><pre><span></span><code>git commit -a -m &quot;emergency commit&quot;
+</code></pre></div>
+
+<h2>The Problem with "git push"</h2>
+<p>The plain command <code>git push</code> also has its issues. From my experience it could fail for three reasons.</p>
+<ol>
+<li>There is no remote configured for the whole repo.</li>
+<li>There is no remote tracking branch configured for the current branch.</li>
+<li>The current branch has remote changes.</li>
+</ol>
+<p>I will leave reason 1 alone because there is no general solution to it. If fire breaks out and you have not yet configured a remote (e.g. at https://codeberg.org) then git cannot help you much and you might be better of to save your work to a USB drive. Chances are high, that your project was in a very early stage anyway and thus the amount of losable data (including version history) is probably low.</p>
+<p>Reasons 2 and 3, however, can occur also in mature projects. Both can be addressed with the same measure:</p>
+<ul>
+<li>
+<p>a) creating (and checking out) a new branch before running git commit:</p>
+<p><code>git checkout -b emergency-backup</code>
+- b) Explicitly specifying the remote tracking branch when pushing:</p>
+<p><code>git push -u origin emergency-backup</code></p>
+</li>
+</ul>
+<p>This assumes that the branch name "emergency-backup" does neither exist in your local repo nor in the remote. If this mild assumption is valid, it prevents conflicts (reason 3) as nobody could have pushed to that branch. It also prevents the problem of a possibly unspecified remote tracking branch by simply explicitly defining one (which, however, is independent of your actual working branch).</p>
+<h2>The problem with "leave building"</h2>
+<p>While the humor of the above meme is based on the fact that there are three short instruction, the last one implies a pretty egoistic character. It should not be forgotten that there are established rules on how to behave in fire-related emergency situations. Simply leaving the building is most likely not the whole story. The exact recommendable actions usually depend on the local circumstances (and should be propagated e.g. via mandatory trainings and signage) but something like the R-A-C-E steps might be a good orientation:</p>
+<p><img src="https://cknoll.github.io/images/2025-09-git-fire/race.jpg" alt="informative official sign 'How To Respond To A Fire; four pictograms labeled: R (Rescue), A (Alarm) C (Contain) E (Extinguish)'" style="width: 100%;"/></p>
+<p>The bottom line is: You are not alone on the world! If you have time to save your project work you should also have time to prevent damage for other humans and material assets.</p>
+<h2>Wrap up</h2>
+<p>The recommended sequence of commands is:</p>
+<div class="highlight"><pre><span></span><code>git checkout -b emergency-backup
+git commit -a -m &quot;emergency commit&quot;
+git push -u origin emergency-backup
+</code></pre></div>
+
+<p>Obviously, this is less rememberable than the original <code>git commit</code>-<code>git push</code>-sequence, but thankfully it could be defined as an alias with the single command:</p>
+<p><code>git config --global alias.fire '!git checkout -b emergency-backup &amp;&amp; git commit -a -m "emergency commit" &amp;&amp; git push -u origin emergency-backup'</code></p>
+<p>Once this alias is defined, in case of emergency it suffices to run</p>
+<div class="highlight"><pre><span></span><code>git fire
+</code></pre></div>
+
+<p>and then concentrate on what is actually important: saving humans and if possible mitigating material damage.</p>
+<p><img src="https://cknoll.github.io/images/2025-09-git-fire/git-fire.png" alt="new version of the meme. text: In case of fire; 1. git fire; 2. dont be a selfish dumbass" style="width: 100%;"/></p>
+
+    
+        
+
+                    <div class="clear"></div>
+                    <div class="info">
+<a href="https://cknoll.github.io/git-fire-en.html">posted at September 22, 19:30</a>&nbsp;&middot;&nbsp;<a href="https://cknoll.github.io/category/artikel.html" rel="tag">Artikel</a>
+                        <div class="tags">
+                            <a href="https://cknoll.github.io/tag/git.html">git</a>
+                            <a href="https://cknoll.github.io/tag/gesellschaft.html">gesellschaft</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="clear"></div>
+                <div id="footer"><a href="https://social.tchncs.de/@cark" rel="me"></a>
+                    <p>
+                    Mockingbird theme by <a href="http://nevanscott.com/">Nevan Scott</a>
+                    &middot;
+                    <a class="atom" href="https://cknoll.github.io/None">Feed</a>
+                    <br>
+                    <img src="http://hitwebcounter.com/counter/counter.php?page=5857611&style=0008&nbdigits=5&type=ip&initCount=0" title="paste and get counter working" Alt="paste and get counter working"   border="0" >
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>
