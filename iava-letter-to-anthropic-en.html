@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>blog:cknoll &middot; An IAEA for AI — and who pays for it</title>
+        <link rel="shortcut icon" href="https://cknoll.github.io/theme/icons/favicon.png" />
+        <link href="https://cknoll.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog:cknoll RSS Feed" />
+
+        <link rel="stylesheet" href="//cknoll.github.io/theme/css/screen.css" type="text/css" />
+        <link rel="stylesheet" href="//cknoll.github.io/theme/css/pygments.css" type="text/css" />
+    </head>
+    <body>
+<div id="header">
+            <ul id="nav">
+                <li><a href="https://cknoll.github.io">Home</a></li>
+<li><a href="https://cknoll.github.io/pages/impressum.html">Impressum</a></li>
+<li><a href="https://cknoll.github.io/archives.html">Archiv</a></li>
+                <li> <a href="https://cknoll.github.io/feeds/all.rss.xml"><img src="https://cknoll.github.io/theme/icons/rss.png" title="RSS Feed" alt="rss-symbol"> RSS Feed</a></li>
+            </ul>
+            <div class="header_box">
+                <h1><a href="https://cknoll.github.io">blog:cknoll</a></h1>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <h4 class="date">Jun 09,  2026</h4>
+                <div class="post">
+<h2 class="title">
+                        <a id="iava-letter-to-anthropic" href="https://cknoll.github.io/iava-letter-to-anthropic-en.html" rel="bookmark" title="Permanent Link to &quot;An IAEA for AI — and who pays for it&quot;">An IAEA for AI — and who pays for it</a>
+                    </h2>
+
+
+
+    <hr>
+<h1>Who builds the AI verification mechanism — and how to pay for it without poisoning it</h1>
+<p><em>An open letter to Marina Favaro and Jack Clark, authors of <a href="https://www.anthropic.com/institute/recursive-self-improvement">"When AI builds itself"</a> (Anthropic Institute, on recursive self-improvement).</em></p>
+<p>Your essay closes on the right problem: if recursive self-improvement is plausible, we need <strong>verifiable coordination mechanisms</strong> that could enable a global slowdown if one is ever warranted. You name the need but leave two questions open — <em>who</em> carries such a mechanism, and <em>how</em> its founding gets financed without destroying the very neutrality that makes it credible. What follows is an attempt at those two questions: deliberately one idea, sharpened, not a survey.</p>
+<h2>The institution is the long pole</h2>
+<p>The mechanism has two parts — a body and a method — and they move at different speeds. A verification <em>method</em> is an engineering problem and can be developed quickly. A legitimate, neutral <em>institution</em> that states will actually submit to is a problem of consent and trust, and historically that takes a decade. So the institution is the binding constraint, and the clock on it starts now — well before the method is finished. The resolution to "but the body would be an empty shell": make <strong>commissioning the verification method its founding statutory mandate.</strong> The institution's first job is to build the tool it will later administer. That fuses the two timelines instead of trading one against the other.</p>
+<h2>Legal form: an IAEA, not a UN organ</h2>
+<p>The natural reflex is "house it in the UN." That is half right. The model to copy is the <strong>IAEA</strong>, which is <em>not</em> a UN organ but an autonomous body created by its own statute — "UN family" for legitimacy, independent for capacity. This matters concretely: the institution's existence and authority do <strong>not</strong> hang on a Security Council veto. Call it, as an open working title, the <strong>International AI Verification Agency (IAVA)</strong> — verification, the thing you identify as missing, named in the institution itself.</p>
+<p>This is not a duplicate of what exists. National AI Safety Institutes (US, UK), the Bletchley/Seoul process, the OECD principles, the UN advisory bodies — all are either <em>national</em> (and therefore not neutral enough for one great power to let another verify it), or <em>soft law</em> (no binding inspection regime), or both. IAVA supplies precisely what they structurally cannot: a neutral treaty body with inspection rights and a hard membership condition.</p>
+<h2>The verifiable handle: compute, privacy-preserving</h2>
+<p>The nuclear regime works because fissile material is physical, concentrated, and countable. The closest analogue for AI is <strong>compute</strong> — advanced chips flow through a narrow supply chain (a handful of fabs, EUV, a few designers), are already serial-numbered and export-controlled. Through on-chip attestation / hardware-enabled mechanisms, a cluster can <em>attest</em> that a training run above a compute threshold occurred <strong>without</strong> exposing weights, data, or architecture.</p>
+<p>That last property is the whole game for great-power consent. You verify <em>that</em> and <em>at what scale</em> computation happened, not <em>what is inside it.</em> This turns the problem from "intrusive inspection = loss of sovereignty" (no equilibrium any major state will accept) into "symmetric, IP-preserving attestation = verified mutual restraint" (a cooperative equilibrium that can hold). The remaining gap — getting determined states to opt in — is then an organizational and game-theoretic problem rather than a technical impossibility: the move is to make verification <em>symmetric and cheap enough</em> that opting in dominates holding out. Compute is the entry point for the regime; the design should not foreclose extending the scope to other verifiable objects as the method matures.</p>
+<h2>Financing without capture</h2>
+<p>The obvious objection to a frontier lab seeding the body that regulates frontier labs is regulatory capture — and it is a real precedent, not a hypothetical: the Gates Foundation's position as a top funder of the WHO produces persistent, documented concern about a private actor setting a UN body's agenda. Here it would be sharper, because the funder is itself regulated.</p>
+<p>So here is the concrete proposal: <strong>Anthropic puts up the first tranche — on the order of one billion dollars — to seed the agency</strong>, and structures that gift so it builds legitimacy rather than buys control. The constraint, after all, is not the money — at current market scale a billion dollars is a rounding error — it is <strong>legitimacy</strong>, the scarce good, which the financing must <em>manufacture</em>, not merely supply. Two devices do this:</p>
+<ol>
+<li>
+<p><strong>Contribution as the entry ticket.</strong> Make a financial contribution a <em>condition of recognized standing</em> as a legitimate frontier developer. This inverts the capture problem: single-donor dominance is structurally impossible when broad contribution is a condition of the institution's existence, and it builds exactly the pressure you would want — anyone claiming a seat at the frontier must acknowledge that the frontier needs global verification, and pay accordingly. Participation becomes incentive-compatible (standing, reputation, a hand in writing the rules), so the institution does not depend on altruism to survive.</p>
+</li>
+<li>
+<p><strong>Matching escrow for the first move.</strong> A lone billion <em>is</em> the unilateral disadvantage you warn about. So the seed contribution should be <strong>conditional</strong>: held in escrow, released only once N further contributors join. The first mover is then not a sucker making a solo concession but the <em>trigger</em> of a coordinated one.</p>
+</li>
+</ol>
+<h2>Why act on an imperfect design</h2>
+<p>This concept has real flaws, and I have not hidden them — great-power consent is not solved, only made tractable; enforcement is hard; the timeline is tight. But the honest comparison is not "this design vs. a perfect one," it is "this design vs. the status quo," and the status quo's flaws are worse — they are merely diffuse, and therefore invisible. A concrete construction with nameable weaknesses beats a diffuse non-construction with deniable ones. If your own thesis about timelines is even roughly right, the cost of waiting for an unflawed mechanism is the one cost we cannot afford.</p>
+<hr>
+<p><em>This letter was drafted with Claude Opus 4.8 from my own reasoning. You — and the people you could convene — undoubtedly command better instruments and more information than I do to find and close the concept's open seams, enforcement against a determined state being the hardest of them.</em></p>
+
+    
+        
+
+                    <div class="clear"></div>
+                    <div class="info">
+<a href="https://cknoll.github.io/iava-letter-to-anthropic-en.html">posted at Juni 09, 12:15</a>&nbsp;&middot;&nbsp;<a href="https://cknoll.github.io/category/artikel.html" rel="tag">Artikel</a>
+                        <div class="tags">
+                            <a href="https://cknoll.github.io/tag/ai.html">ai</a>
+                            <a href="https://cknoll.github.io/tag/gesellschaft.html">gesellschaft</a>
+                            <a href="https://cknoll.github.io/tag/politik.html">politik</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="clear"></div>
+                <div id="footer"><a href="https://social.tchncs.de/@cark" rel="me"></a>
+                    <p>
+                    Mockingbird theme by <a href="http://nevanscott.com/">Nevan Scott</a>
+                    &middot;
+                    <a class="atom" href="https://cknoll.github.io/None">Feed</a>
+                    <br>
+                    <img src="http://hitwebcounter.com/counter/counter.php?page=5857611&style=0008&nbdigits=5&type=ip&initCount=0" title="paste and get counter working" Alt="paste and get counter working"   border="0" >
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>
